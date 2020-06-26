@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="iconFont" horiz-adv-x="911.7647058823529">
+    <font-face font-family="iconFont"
+      units-per-em="1000" ascent="1000"
+      descent="0" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="quotes"
+      unicode="&#xE001;"
+      horiz-adv-x="911.7647058823529" d="M-1e-13 999.9999999999998L50 20.5882352941161L251.5294117647059 20.5882352941161L303.1764705882352 1000L-1e-13 999.9999999999998zM588.235294117647 1000L638.235294117647 20.5882352941161L839.7647058823529 20.5882352941161L891.4117647058789 1000L588.235294117647 1000z" />
+  </font>
+</defs>
+</svg>

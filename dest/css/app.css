@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 14, src/scss/_utilities/_extend.scss */
 .main__slide-img img {
   position: absolute;
@@ -9,6 +10,29 @@
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+@font-face {
+  font-family: "iconFont";
+  src: url("../fonts/iconFont.eot");
+  src: url("../fonts/iconFont.eot?#iefix") format("eot"), url("../fonts/iconFont.woff2") format("woff2"), url("../fonts/iconFont.woff") format("woff"), url("../fonts/iconFont.ttf") format("truetype"), url("../fonts/iconFont.svg#iconFont") format("svg");
+}
+
+/* line 23, src/scss/_generated/_spriteFont.scss */
+.icon-quotes:before {
+  font-family: "iconFont", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/* line 38, src/scss/_generated/_spriteFont.scss */
+.icon-quotes:before {
+  content: "";
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -209,6 +233,15 @@ picture {
   max-width: 100%;
 }
 
+/* line 1, src/scss/_shared/_iconFont.scss */
+.icon-font {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
+}
+
 /* line 4, src/scss/_macros/_logotype.scss */
 .logo__btn {
   display: -webkit-box;
@@ -223,6 +256,14 @@ picture {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* line 3, src/scss/_macros/_title.scss */
+.c-title {
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  color: #040404;
+  text-align: center;
 }
 
 /* line 10, src/scss/_macros/_btn.scss */
@@ -551,7 +592,7 @@ picture {
 
 /* line 58, src/scss/_components/homepage/_main.scss */
 .main__slide-title {
-  padding-bottom: 28px;
+  padding-bottom: 24px;
   text-align: center;
   font-size: 40px;
   letter-spacing: 0.04em;
@@ -569,7 +610,7 @@ picture {
   min-height: 180px;
   padding-bottom: 41px;
   font-family: 'Quicksand', sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 0.03em;
   line-height: 35px;
   color: #fff;
@@ -592,8 +633,8 @@ picture {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 240px;
-  height: 50px;
+  width: 210px;
+  height: 45px;
   margin-left: auto;
   margin-right: auto;
   -webkit-border-radius: 4px;
@@ -616,14 +657,14 @@ picture {
   visibility: hidden;
   z-index: 0;
   position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   width: 0;
   height: 100%;
-  top: 50%;
-  left: 50%;
   background: #cccccc;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, width 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, width 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, width 0.3s ease-in-out;
@@ -710,6 +751,154 @@ picture {
 /* line 163, src/scss/_components/homepage/_main.scss */
 .main .swiper-pagination-bullet-active {
   background-color: #ffffff;
+}
+
+/* line 3, src/scss/_components/homepage/_problem.scss */
+.problem {
+  padding-top: 55px;
+  padding-bottom: 120px;
+}
+
+/* line 7, src/scss/_components/homepage/_problem.scss */
+.problem__title {
+  padding-bottom: 80px;
+}
+
+/* line 11, src/scss/_components/homepage/_problem.scss */
+.problem__box {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 310px;
+  min-height: 170px;
+  padding: 20px 15px;
+}
+
+/* line 21, src/scss/_components/homepage/_problem.scss */
+.problem__box .icon-font {
+  position: absolute;
+  color: #646464;
+  font-size: 30px;
+}
+
+/* line 26, src/scss/_components/homepage/_problem.scss */
+.problem__box .icon-font:nth-of-type(1) {
+  top: -26px;
+  left: -12px;
+}
+
+/* line 30, src/scss/_components/homepage/_problem.scss */
+.problem__box .icon-font:nth-of-type(2) {
+  bottom: -26px;
+  right: -12px;
+}
+
+/* line 36, src/scss/_components/homepage/_problem.scss */
+.problem__box p {
+  z-index: 5;
+  position: relative;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 21px;
+  text-align: center;
+  color: #040404;
+}
+
+/* line 45, src/scss/_components/homepage/_problem.scss */
+.problem__box:before, .problem__box:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #707070;
+}
+
+/* line 52, src/scss/_components/homepage/_problem.scss */
+.problem__box:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 59, src/scss/_components/homepage/_problem.scss */
+.problem__box:after {
+  top: 5px;
+  left: 4px;
+  width: -webkit-calc(100% - 8px);
+  width: calc(100% - 8px);
+  height: -webkit-calc(100% - 10px);
+  height: calc(100% - 10px);
+}
+
+/* line 66, src/scss/_components/homepage/_problem.scss */
+.problem__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 71, src/scss/_components/homepage/_problem.scss */
+.problem__box-col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 74, src/scss/_components/homepage/_problem.scss */
+.problem__box-col-1, .problem__box-col-2, .problem__box-col-3 {
+  width: -webkit-calc(100% / 3);
+  width: calc(100% / 3);
+  padding-bottom: 50px;
+}
+
+/* line 81, src/scss/_components/homepage/_problem.scss */
+.problem__box-col-2 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 85, src/scss/_components/homepage/_problem.scss */
+.problem__box-col-3 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 89, src/scss/_components/homepage/_problem.scss */
+.problem__box-col-4, .problem__box-col-5 {
+  width: 50%;
+  padding-top: 50px;
+}
+
+/* line 95, src/scss/_components/homepage/_problem.scss */
+.problem__box-col-4 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 100px;
+}
+
+/* line 100, src/scss/_components/homepage/_problem.scss */
+.problem__box-col-5 {
+  padding-left: 100px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
