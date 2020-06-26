@@ -137,7 +137,25 @@ var initSwiper = function initSwiper() {
   /*
   * CALLBACK :: start
   * ============================================= */
+  var seeVideoToggle = function seeVideoToggle() {
+    var myVideo = document.getElementById("video");
 
+    function playPause() {
+      var videoNode = document.querySelector('[see-videoNode-js]');
+
+      if (myVideo.paused) {
+        videoNode.classList.add('is-play');
+        myVideo.play();
+      } else {
+        videoNode.classList.remove('is-play');
+        myVideo.pause();
+      }
+    }
+
+    document.querySelector('[see-play-js]').addEventListener('click', function (ev) {
+      playPause(myVideo);
+    }, false);
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -156,6 +174,7 @@ var initSwiper = function initSwiper() {
     // ==========================================
 
     // callback
+    seeVideoToggle();
     // ==========================================
   };
   initNative();

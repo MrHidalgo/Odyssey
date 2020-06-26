@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 14, src/scss/_utilities/_extend.scss */
-.main__slide-img img {
+.main__slide-img img, .see video {
   position: absolute;
   top: 0;
   left: 0;
@@ -19,7 +19,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-quotes:before {
+.icon-pause:before, .icon-play:before, .icon-quotes:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,9 +30,19 @@
   text-transform: none;
 }
 
-/* line 38, src/scss/_generated/_spriteFont.scss */
-.icon-quotes:before {
+/* line 44, src/scss/_generated/_spriteFont.scss */
+.icon-pause:before {
   content: "";
+}
+
+/* line 44, src/scss/_generated/_spriteFont.scss */
+.icon-play:before {
+  content: "";
+}
+
+/* line 44, src/scss/_generated/_spriteFont.scss */
+.icon-quotes:before {
+  content: "";
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -789,18 +799,18 @@ picture {
 .problem__box .icon-font {
   position: absolute;
   color: #646464;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 /* line 26, src/scss/_components/homepage/_problem.scss */
 .problem__box .icon-font:nth-of-type(1) {
-  top: -26px;
+  top: -24px;
   left: -12px;
 }
 
 /* line 30, src/scss/_components/homepage/_problem.scss */
 .problem__box .icon-font:nth-of-type(2) {
-  bottom: -26px;
+  bottom: -24px;
   right: -12px;
 }
 
@@ -899,6 +909,234 @@ picture {
 /* line 100, src/scss/_components/homepage/_problem.scss */
 .problem__box-col-5 {
   padding-left: 100px;
+}
+
+/* line 3, src/scss/_components/homepage/_see.scss */
+.see {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #d9d9d9;
+}
+
+/* line 8, src/scss/_components/homepage/_see.scss */
+.see__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 420px;
+}
+
+/* line 13, src/scss/_components/homepage/_see.scss */
+.see__wrapper-left, .see__wrapper-right {
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+/* line 20, src/scss/_components/homepage/_see.scss */
+.see__wrapper-left {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 88px;
+}
+
+/* line 27, src/scss/_components/homepage/_see.scss */
+.see__wrapper-right {
+  position: relative;
+}
+
+/* line 31, src/scss/_components/homepage/_see.scss */
+.see__wrapper-right.is-play:before, .see__wrapper-right.is-play:after {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 39, src/scss/_components/homepage/_see.scss */
+.see__wrapper-right.is-play .see__play .icon-font {
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 42, src/scss/_components/homepage/_see.scss */
+.see__wrapper-right.is-play .see__play .icon-font.icon-play {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* line 46, src/scss/_components/homepage/_see.scss */
+.see__wrapper-right.is-play .see__play .icon-font.icon-pause {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 54, src/scss/_components/homepage/_see.scss */
+.see__wrapper-right:before, .see__wrapper-right:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 64, src/scss/_components/homepage/_see.scss */
+.see__wrapper-right:before {
+  content: '';
+  z-index: 1;
+  opacity: 0.69;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cd9dab), color-stop(26.21%, #78a193), color-stop(68.6%, #7db6d2), to(#674f56));
+  background-image: -webkit-linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
+  background-image: -o-linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
+  background-image: linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
+}
+
+/* line 71, src/scss/_components/homepage/_see.scss */
+.see__wrapper-right:after {
+  content: '';
+  z-index: 2;
+  opacity: 0.35;
+  background-color: #040404;
+}
+
+/* line 80, src/scss/_components/homepage/_see.scss */
+.see__content {
+  width: 100%;
+  max-width: 392px;
+}
+
+/* line 85, src/scss/_components/homepage/_see.scss */
+.see__title {
+  width: 100%;
+  max-width: 353px;
+  padding-bottom: 60px;
+  text-align: left;
+}
+
+/* line 92, src/scss/_components/homepage/_see.scss */
+.see__line {
+  position: absolute;
+}
+
+/* line 95, src/scss/_components/homepage/_see.scss */
+.see__line-1 {
+  opacity: 0.49;
+  top: 18px;
+  left: 14px;
+  width: 8px;
+  height: 148px;
+  background-color: #9ec7db;
+}
+
+/* line 104, src/scss/_components/homepage/_see.scss */
+.see__line-2 {
+  left: 14px;
+  bottom: 28px;
+  width: 148px;
+  height: 8px;
+  background-color: #cd9dab;
+  opacity: 0.36;
+}
+
+/* line 116, src/scss/_components/homepage/_see.scss */
+.see__btn .c-btn:nth-of-type(1) {
+  margin-right: 40px;
+}
+
+/* line 122, src/scss/_components/homepage/_see.scss */
+.see__play {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: border-width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 138, src/scss/_components/homepage/_see.scss */
+.see__play:hover {
+  border-width: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-transition: border-width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 143, src/scss/_components/homepage/_see.scss */
+.see__play:hover .icon-font {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 149, src/scss/_components/homepage/_see.scss */
+.see__play .icon-font {
+  position: relative;
+  left: 3px;
+  font-size: 28px;
+  color: #ffffff;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 157, src/scss/_components/homepage/_see.scss */
+.see__play .icon-font.icon-pause {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=maps/app.css.map */

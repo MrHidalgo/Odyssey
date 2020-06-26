@@ -27,8 +27,14 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == quotes {
+	@if $filename == pause {
 		$char: "\E001";
+	}
+	@if $filename == play {
+		$char: "\E002";
+	}
+	@if $filename == quotes {
+		$char: "\E003";
 	}
 
 	@return $char;
@@ -45,6 +51,14 @@
 	}
 }
 
+.icon-pause {
+	@include icon(pause);
+
+}
+.icon-play {
+	@include icon(play);
+
+}
 .icon-quotes {
 	@include icon(quotes);
 

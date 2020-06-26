@@ -1,0 +1,173 @@
+// SECTION :: START
+
+.see {
+	padding-top: 90px;
+	padding-bottom: 90px;
+	background-color: #d9d9d9;
+
+	&__wrapper {
+		display: flex;
+		height: 420px;
+
+
+		&-left,
+		&-right {
+			width: 50%;
+			height: 100%;
+			background-color: #ffffff;
+		}
+
+		&-left {
+			position: relative;
+			display: flex;
+			align-items: center;
+			padding-left: 88px;
+		}
+
+		&-right {
+			position: relative;
+
+			&.is-play {
+				&:before,
+				&:after {
+					opacity: 0;
+					visibility: hidden;
+					@include transition(opacity, visibility);
+				}
+
+				.see__play {
+					.icon-font {
+						@include transition(transform, opacity, visibility);
+
+						&.icon-play {
+							opacity: 0;
+							visibility: hidden;
+						}
+						&.icon-pause {
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
+			}
+
+			&:before,
+			 &:after {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				 @include transition(opacity, visibility);
+			 }
+
+			&:before {
+				content: '';
+				z-index: 1;
+				opacity: 0.69;
+				background-image: linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
+			}
+
+			&:after {
+				content: '';
+				z-index: 2;
+				opacity: 0.35;
+				background-color: #040404;
+			}
+		}
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 392px;
+	}
+
+	&__title {
+		width: 100%;
+		max-width: 353px;
+		padding-bottom: 60px;
+		text-align: left;
+	}
+
+	&__line {
+		position: absolute;
+
+		&-1 {
+			opacity: 0.49;
+			top: 18px;
+			left: 14px;
+			width: 8px;
+			height: 148px;
+			background-color: #9ec7db;
+		}
+
+		&-2 {
+			left: 14px;
+			bottom: 28px;
+			width: 148px;
+			height: 8px;
+			background-color: #cd9dab;
+			opacity: 0.36;
+		}
+	}
+
+	&__btn {
+		.c-btn {
+			&:nth-of-type(1) {
+				margin-right: 40px;
+			}
+		}
+	}
+
+	&__play {
+		z-index: 10;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 60px;
+		border: 3px solid #fff;
+		border-radius: 50%;
+		background-color: transparent;
+		@include transition(border-width, background-color);
+
+		&:hover {
+			border-width: 1px;
+			background-color: rgba(#fff, 0.15);
+			@include transition(border-width, background-color);
+
+			.icon-font {
+				transform: scale(0.9);
+				@include transition(transform);
+			}
+		}
+
+		.icon-font {
+			position: relative;
+			left: 3px;
+			font-size: 28px;
+			color: #ffffff;
+			transform-origin: center;
+			@include transition(transform, opacity, visibility);
+
+			&.icon-pause {
+				opacity: 0;
+				visibility: hidden;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+
+	video {
+		@extend %imageResCoverAbs;
+	}
+}
+
+// SECTION :: END
