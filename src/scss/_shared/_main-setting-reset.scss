@@ -4,7 +4,6 @@ body {
   min-height: 100vh;
 
   &.is-hideScroll {
-    position: fixed;
     width: 100%;
     overflow: hidden !important;
   }

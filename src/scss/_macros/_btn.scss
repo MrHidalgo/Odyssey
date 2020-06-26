@@ -1,58 +1,66 @@
 // BUTTON :: START
 
 // ==================================================
-// ==================================================
-// ==================================================
-
-$bth-width: 250px;
 $bth-height: 45px;
-$btn-border-width: 1px;
-$btn-border-color: rgba(#000, 1);
-$bth-border-radius: 5px;
-$bth-box-shadow: none;
-$bth-background-color: rgba(#000, 1);
-$bth-color: rgba(#fff, 1);
-$bth-font-size: rgba(#000, 1);
-$bth-font-weight: bold;
-
-$btn-color--border: rgba(#000, 1);
-
-// ==================================================
-// ==================================================
+$bth-border-radius: 4px;
+$bth-color: rgba(#040404, 1);
+$bth-font-size: 17px;
 // ==================================================
 
 .c-btn {
   outline: none;
+	overflow: hidden;
   cursor: pointer;
+	position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: $bth-width;
+	width: auto;
   height: $bth-height;
-  border: $btn-border-width solid $btn-border-color;
-  box-shadow: $bth-box-shadow;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: none;
   border-radius: $bth-border-radius;
-  color: $bth-color;
-  font-size: $bth-font-size;
-  font-weight: $bth-font-weight;
+	background-color: #d9d9d9;
+	@include transition(transform);
 
-  &--border {
-    background-color: transparent;
-    color: $btn-color--border;
-  }
+	&:after {
+		content: '';
+		opacity: 0;
+		visibility: hidden;
+		z-index: 0;
+		position: absolute;
+		width: 0;
+		height: 100%;
+		top: 50%;
+		left: 50%;
+		background: darken(#d9d9d9, 5%);
+		transform: translate(-50%, -50%);
+		@include transition(opacity, visibility, width);
+	}
 
-  &--bg {
-    background-color: $bth-background-color;
-  }
+	&:hover {
+		transform: translateY(-3px);
+		@include transition(transform);
 
-  &__text {
-    &-wrap {}
-  }
+		&:after {
+			opacity: 1;
+			visibility: visible;
+			width: 100%;
+			@include transition(opacity, visibility, width);
+		}
+	}
 
-  &__icon {
-    &-wrap {}
-  }
+	&__wrapper {
+		display: flex;
+	}
+
+	span {
+		z-index: 2;
+		position: relative;
+		color: $bth-color;
+		font-size: $bth-font-size;
+	}
 }
 
 // BUTTON :: END
