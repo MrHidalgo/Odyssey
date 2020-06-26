@@ -7,7 +7,7 @@
  */
 const initSwiper = () => {
 
-  const mySwiper = new Swiper('.swiper-container', {
+  const mySwiper = new Swiper('', {
     // Optional parameters
     wrapperClass: "swiper-wrapper",
     slideClass: "swiper-slide",
@@ -83,6 +83,30 @@ const initSwiper = () => {
       "slideChange": function () {
         console.log("slideChange");
       },
+    }
+  });
+
+  const mainSlider = new Swiper('.mainSlider', {
+    loop: false,
+    grabCursor: false,
+    freeMode: false,
+    effect: 'fade', // "slide", "fade", "cube", "coverflow" or "flip"
+		fadeEffect: {
+			crossFade: true
+		},
+		speed: 800,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      // renderBullet: function (index, className) {
+      //   return `
+      //     <div class="${className}">
+      //       ${index}
+      //     </div>
+      //   `;
+      // }
     }
   });
 };

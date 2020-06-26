@@ -21,8 +21,9 @@ $bth-font-size: 17px;
 	padding-right: 20px;
 	border: none;
   border-radius: $bth-border-radius;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 	background-color: #d9d9d9;
-	@include transition(transform);
+	@include transition(transform, box-shadow);
 
 	&:after {
 		content: '';
@@ -41,7 +42,8 @@ $bth-font-size: 17px;
 
 	&:hover {
 		transform: translateY(-3px);
-		@include transition(transform);
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+		@include transition(transform, box-shadow);
 
 		&:after {
 			opacity: 1;
