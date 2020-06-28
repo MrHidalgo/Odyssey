@@ -19,7 +19,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-pause:before, .icon-play:before, .icon-quotes:before {
+.icon-linkedin:before, .icon-pause:before, .icon-play:before, .icon-quotes:before, .icon-twitter:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,19 +30,29 @@
   text-transform: none;
 }
 
-/* line 44, src/scss/_generated/_spriteFont.scss */
-.icon-pause:before {
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-linkedin:before {
   content: "";
 }
 
-/* line 44, src/scss/_generated/_spriteFont.scss */
-.icon-play:before {
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-pause:before {
   content: "";
 }
 
-/* line 44, src/scss/_generated/_spriteFont.scss */
-.icon-quotes:before {
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-play:before {
   content: "";
+}
+
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-quotes:before {
+  content: "";
+}
+
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
+  content: "";
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -241,6 +251,54 @@ picture {
 /* line 26, src/scss/_shared/_grid.scss */
 .c-grid-fluid {
   max-width: 100%;
+}
+
+/* line 3, src/scss/_shared/_common.scss */
+.social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 7, src/scss/_shared/_common.scss */
+.social__link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 11, src/scss/_shared/_common.scss */
+.social__link .icon-font {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* line 17, src/scss/_shared/_common.scss */
+.social__link span {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  line-height: 36px;
+  color: #fff;
+}
+
+/* line 27, src/scss/_shared/_common.scss */
+.copyright__text {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 63px;
+  color: #fff;
 }
 
 /* line 1, src/scss/_shared/_iconFont.scss */
@@ -532,6 +590,111 @@ picture {
   -webkit-transform: translateY(7px);
       -ms-transform: translateY(7px);
           transform: translateY(7px);
+}
+
+/* line 4, src/scss/_components/common/_footer.scss */
+.footer__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 7, src/scss/_components/common/_footer.scss */
+.footer__wrapper-1 {
+  background-color: #3b3b3b;
+  -webkit-box-shadow: 0px -10px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px -10px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* line 12, src/scss/_components/common/_footer.scss */
+.footer__wrapper-2 {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 53px;
+  background-color: #707070;
+}
+
+/* line 19, src/scss/_components/common/_footer.scss */
+.footer__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  min-height: 192px;
+}
+
+/* line 27, src/scss/_components/common/_footer.scss */
+.footer__col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 32, src/scss/_components/common/_footer.scss */
+.footer__col-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 36, src/scss/_components/common/_footer.scss */
+.footer__col-2 > div {
+  width: 100%;
+  max-width: 200px;
+}
+
+/* line 43, src/scss/_components/common/_footer.scss */
+.footer__title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  line-height: 36px;
+  color: #fff;
+}
+
+/* line 50, src/scss/_components/common/_footer.scss */
+.footer ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 54, src/scss/_components/common/_footer.scss */
+.footer ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 57, src/scss/_components/common/_footer.scss */
+.footer ul li a {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  line-height: 36px;
+  color: #fff;
 }
 
 /* line 3, src/scss/_components/homepage/_main.scss */

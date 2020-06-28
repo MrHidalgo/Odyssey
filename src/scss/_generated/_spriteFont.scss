@@ -27,14 +27,20 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == pause {
+	@if $filename == linkedin {
 		$char: "\E001";
 	}
-	@if $filename == play {
+	@if $filename == pause {
 		$char: "\E002";
 	}
-	@if $filename == quotes {
+	@if $filename == play {
 		$char: "\E003";
+	}
+	@if $filename == quotes {
+		$char: "\E004";
+	}
+	@if $filename == twitter {
+		$char: "\E005";
 	}
 
 	@return $char;
@@ -51,6 +57,10 @@
 	}
 }
 
+.icon-linkedin {
+	@include icon(linkedin);
+
+}
 .icon-pause {
 	@include icon(pause);
 
@@ -61,5 +71,9 @@
 }
 .icon-quotes {
 	@include icon(quotes);
+
+}
+.icon-twitter {
+	@include icon(twitter);
 
 }
