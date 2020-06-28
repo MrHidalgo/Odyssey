@@ -1689,4 +1689,12 @@ picture {
           justify-content: flex-end;
 }
 
+/* line 54, src/scss/_components/homepage/_ecosystem.scss */
+.ecosystem__img a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
