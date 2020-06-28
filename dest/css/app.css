@@ -1384,4 +1384,226 @@ picture {
   color: #ffffff;
 }
 
+/* line 3, src/scss/_components/homepage/_description.scss */
+.description {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+/* line 7, src/scss/_components/homepage/_description.scss */
+.description__box {
+  position: relative;
+  width: 100%;
+  max-width: 430px;
+}
+
+/* line 14, src/scss/_components/homepage/_description.scss */
+.description__box-1 .description__box-head:before,
+.description__box-1 .description__box-head > div {
+  background-color: #9EC7DB;
+}
+
+/* line 22, src/scss/_components/homepage/_description.scss */
+.description__box-2 .description__box-head:before,
+.description__box-2 .description__box-head > div {
+  background-color: #78A193;
+}
+
+/* line 30, src/scss/_components/homepage/_description.scss */
+.description__box-3 .description__box-head:before,
+.description__box-3 .description__box-head > div {
+  background-color: #CD9DAB;
+}
+
+/* line 38, src/scss/_components/homepage/_description.scss */
+.description__box-4 .description__box-head:before,
+.description__box-4 .description__box-head > div {
+  background-color: #C38749;
+}
+
+/* line 45, src/scss/_components/homepage/_description.scss */
+.description__box:before {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  top: 30px;
+  left: -30px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+/* line 57, src/scss/_components/homepage/_description.scss */
+.description__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 65, src/scss/_components/homepage/_description.scss */
+.description__box-wrapper > div {
+  width: 50%;
+  padding-bottom: 35px;
+}
+
+/* line 69, src/scss/_components/homepage/_description.scss */
+.description__box-wrapper > div:nth-of-type(2), .description__box-wrapper > div:nth-of-type(4) {
+  padding-top: 50px;
+}
+
+/* line 74, src/scss/_components/homepage/_description.scss */
+.description__box-wrapper > div:nth-of-type(1) {
+  padding-right: 80px;
+}
+
+/* line 78, src/scss/_components/homepage/_description.scss */
+.description__box-wrapper > div:nth-of-type(2) {
+  padding-left: 35px;
+}
+
+/* line 82, src/scss/_components/homepage/_description.scss */
+.description__box-wrapper > div:nth-of-type(3) {
+  padding-right: 80px;
+  padding-left: 40px;
+}
+
+/* line 87, src/scss/_components/homepage/_description.scss */
+.description__box-wrapper > div:nth-of-type(4) {
+  padding-left: 75px;
+}
+
+/* line 93, src/scss/_components/homepage/_description.scss */
+.description__box-content {
+  z-index: 5;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-height: 335px;
+  -webkit-border-radius: 11px;
+          border-radius: 11px;
+  background-color: #fff;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+/* line 107, src/scss/_components/homepage/_description.scss */
+.description__box-head {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 75px;
+  -webkit-box-shadow: 0 1.67px 1.67px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1.67px 1.67px rgba(0, 0, 0, 0.3);
+}
+
+/* line 115, src/scss/_components/homepage/_description.scss */
+.description__box-head:before {
+  content: '';
+  position: absolute;
+  bottom: -13px;
+  right: 30px;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: 0 1.67px 1.67px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1.67px 1.67px rgba(0, 0, 0, 0.3);
+}
+
+/* line 126, src/scss/_components/homepage/_description.scss */
+.description__box-head > div {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 11px 11px 0 0;
+          border-radius: 11px 11px 0 0;
+}
+
+/* line 134, src/scss/_components/homepage/_description.scss */
+.description__box-head p {
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 72px;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 143, src/scss/_components/homepage/_description.scss */
+.description__box-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 1px;
+  max-height: 100%;
+  padding: 30px;
+}
+
+/* line 151, src/scss/_components/homepage/_description.scss */
+.description__box-body ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 155, src/scss/_components/homepage/_description.scss */
+.description__box-body ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 17px;
+  line-height: 35px;
+  color: #000;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
