@@ -425,6 +425,7 @@ picture {
 .c-btn span {
   z-index: 2;
   position: relative;
+  text-transform: capitalize;
   color: #040404;
   font-size: 17px;
 }
@@ -1858,6 +1859,209 @@ picture {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+/* line 3, src/scss/_components/homepage/_try.scss */
+.try {
+  padding-top: 83px;
+  padding-bottom: 107px;
+}
+
+/* line 7, src/scss/_components/homepage/_try.scss */
+.try__title {
+  padding-bottom: 18px;
+}
+
+/* line 10, src/scss/_components/homepage/_try.scss */
+.try__title-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* line 15, src/scss/_components/homepage/_try.scss */
+.try__title-wrapper > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 22, src/scss/_components/homepage/_try.scss */
+.try__line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 148px;
+  height: 8px;
+  background-color: #9ec7db;
+  margin-bottom: 45px;
+}
+
+/* line 30, src/scss/_components/homepage/_try.scss */
+.try__desc {
+  padding-bottom: 78px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.17em;
+  line-height: 92px;
+  color: #030303;
+  text-align: center;
+}
+
+/* line 41, src/scss/_components/homepage/_try.scss */
+.try__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 44, src/scss/_components/homepage/_try.scss */
+.try__wrapper-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-top: 24px;
+  padding-right: 60px;
+}
+
+/* line 52, src/scss/_components/homepage/_try.scss */
+.try__wrapper-right {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* line 58, src/scss/_components/homepage/_try.scss */
+.try__text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.06em;
+  line-height: 40px;
+  color: #040404;
+}
+
+/* line 65, src/scss/_components/homepage/_try.scss */
+.try__text:not(:last-of-type) {
+  padding-bottom: 30px;
+}
+
+/* line 69, src/scss/_components/homepage/_try.scss */
+.try__text-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 60px;
+}
+
+/* line 76, src/scss/_components/homepage/_try.scss */
+.try__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 80, src/scss/_components/homepage/_try.scss */
+.try__info-title {
+  padding-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 22px;
+  color: #040404;
+}
+
+/* line 87, src/scss/_components/homepage/_try.scss */
+.try__info a {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 22px;
+  color: #040404;
+}
+
+/* line 94, src/scss/_components/homepage/_try.scss */
+.try__form {
+  width: 100%;
+  max-width: 517px;
+  min-height: 481px;
+  padding: 30px 35px 45px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  border: 1px solid #707070;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+}
+
+/* line 104, src/scss/_components/homepage/_try.scss */
+.try__form-field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 20px;
+}
+
+/* line 109, src/scss/_components/homepage/_try.scss */
+.try__form-field--btn {
+  padding-top: 28px;
+}
+
+/* line 114, src/scss/_components/homepage/_try.scss */
+.try__form label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  color: #030303;
+}
+
+/* line 123, src/scss/_components/homepage/_try.scss */
+.try__form input {
+  outline: none;
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 1px solid #707070;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  color: #030303;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
