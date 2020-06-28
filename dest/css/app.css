@@ -1321,4 +1321,67 @@ picture {
   color: #040404;
 }
 
+/* line 3, src/scss/_components/homepage/_trust.scss */
+.trust {
+  position: relative;
+  background-image: url("../img/img-trust-bg@2x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 10, src/scss/_components/homepage/_trust.scss */
+.trust:before {
+  content: '';
+  z-index: 1;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cd9dab), color-stop(26.21%, #78a193), color-stop(68.6%, #7db6d2), to(#674f56));
+  background-image: -webkit-linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
+  background-image: -o-linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
+  background-image: linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
+}
+
+/* line 22, src/scss/_components/homepage/_trust.scss */
+.trust:after {
+  content: '';
+  z-index: 2;
+  opacity: 0.35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #040404;
+}
+
+/* line 34, src/scss/_components/homepage/_trust.scss */
+.trust__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 270px;
+}
+
+/* line 41, src/scss/_components/homepage/_trust.scss */
+.trust__title {
+  z-index: 10;
+  position: relative;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
