@@ -1,0 +1,128 @@
+// SECTION :: START
+
+.enterprise {
+	padding-top: 95px;
+	padding-bottom: 50px;
+
+	&__title {
+		padding-bottom: 84px;
+	}
+
+	&__box {
+		display: flex;
+		width: 100%;
+		max-width: 725px;
+		min-height: 160px;
+		border-radius: 88.5px;
+		box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+		background-color: #e6e6e6;
+
+		&-1 {
+			.enterprise__box-badge {
+				background-color: #9EC7DB;
+
+				&:before {
+					border-bottom-color: #66ABCC;
+				}
+			}
+		}
+		&-2 {
+			.enterprise__box-badge {
+				background-color: #CD9DAB;
+
+				&:before {
+					border-bottom-color: #B48190;
+				}
+			}
+		}
+		&-3 {
+			.enterprise__box-badge {
+				background-color: #78A193;
+
+				&:before {
+					border-bottom-color: #56776C;
+				}
+			}
+		}
+		&-4 {
+			.enterprise__box-badge {
+				background-color: #E5AC71;
+
+				&:before {
+					border-bottom-color: #C38749;
+				}
+			}
+		}
+
+		> div {
+			display: flex;
+
+			&:nth-of-type(1) {
+				justify-content: flex-end;
+				width: 215px;
+				padding-right: 15px;
+			}
+			&:nth-of-type(2) {
+				align-items: center;
+				flex: 1;
+				min-width: 1px;
+				max-width: 100%;
+				padding-right: 50px;
+			}
+		}
+
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+
+			> div {
+				display: flex;
+				padding-bottom: 53px;
+
+				&:nth-of-type(even) {
+					justify-content: flex-end;
+				}
+			}
+		}
+
+		&-badge {
+			position: relative;
+			top: -13px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 135px;
+			height: 75px;
+			border-radius: 0 0 8px 8px;
+			background-color: #ffffff;
+
+			&:before {
+				content: '';
+				z-index: 0;
+				position: absolute;
+				top: 0;
+				left: -26px;
+				width: 0;
+				height: 0;
+				border-bottom: 26px solid red;
+				border-left: 26px solid transparent;
+			}
+
+			span {
+				font-size: 20px;
+				letter-spacing: 0.02em;
+				line-height: 72px;
+				color: #fff;
+			}
+		}
+
+		p {
+			font-family: 'Quicksand', sans-serif;
+			font-size: 17px;
+			line-height: 36px;
+			color: #040404;
+		}
+	}
+}
+
+// SECTION :: END
