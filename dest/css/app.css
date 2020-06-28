@@ -1606,4 +1606,87 @@ picture {
   color: #000;
 }
 
+/* line 3, src/scss/_components/homepage/_ecosystem.scss */
+.ecosystem {
+  background-color: rgba(195, 135, 73, 0.07);
+  border: 1px solid rgba(210, 210, 210, 0.07);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* line 8, src/scss/_components/homepage/_ecosystem.scss */
+.ecosystem__wrapper {
+  min-height: 395px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+/* line 14, src/scss/_components/homepage/_ecosystem.scss */
+.ecosystem__title {
+  text-align: left;
+  padding-bottom: 28px;
+}
+
+/* line 19, src/scss/_components/homepage/_ecosystem.scss */
+.ecosystem__line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 148px;
+  height: 8px;
+  background-color: #9ec7db;
+  margin-bottom: 60px;
+}
+
+/* line 27, src/scss/_components/homepage/_ecosystem.scss */
+.ecosystem__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 32, src/scss/_components/homepage/_ecosystem.scss */
+.ecosystem__img-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+}
+
+/* line 38, src/scss/_components/homepage/_ecosystem.scss */
+.ecosystem__img-wrapper > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: -webkit-calc(100% / 4);
+  max-width: calc(100% / 4);
+}
+
+/* line 43, src/scss/_components/homepage/_ecosystem.scss */
+.ecosystem__img-wrapper > div:nth-of-type(2), .ecosystem__img-wrapper > div:nth-of-type(3) {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 48, src/scss/_components/homepage/_ecosystem.scss */
+.ecosystem__img-wrapper > div:last-of-type {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
