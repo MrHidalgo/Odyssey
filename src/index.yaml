@@ -3,7 +3,7 @@ ProjectTitle: Odyssey
 PageList:
 - file: index.html
   titleName: Home
-  ready: 1
+  ready: 90
 - file: solution.html
   titleName: Solution
   ready: 1

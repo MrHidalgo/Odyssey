@@ -10,6 +10,9 @@
 		@include adaptive(1279) {
 			padding-bottom: 50px;
 		}
+		@include adaptive(767) {
+			padding-bottom: 75px;
+		}
 
 		&-img {
 			position: absolute;
@@ -62,6 +65,9 @@
 			@include adaptive(1023) {
 				padding-top: 75px;
 			}
+			@include adaptive(767) {
+				padding-top: 50px;
+			}
 		}
 
 		&-title {
@@ -75,6 +81,11 @@
 			}
 			@include adaptive(1023) {
 				font-size: 33px;
+			}
+			@include adaptive(767) {
+				padding-left: 15px;
+				padding-right: 15px;
+				font-size: 30px;
 			}
 
 			&--hidden {
@@ -94,6 +105,9 @@
 			text-align: center;
 			@include adaptive(1279) {
 				font-size: 20px;
+			}
+			@include adaptive(767) {
+				font-size: 18px;
 			}
 		}
 
@@ -163,6 +177,9 @@
 			@include adaptive(1279) {
 				height: 475px;
 			}
+			@include adaptive(767) {
+				height: auto;
+			}
 		}
 
 		&-pagination {
@@ -174,6 +191,9 @@
 			@include adaptive(1023) {
 				bottom: 40px;
 			}
+			@include adaptive(767) {
+				bottom: 15px;
+			}
 
 			&-bullet {
 				outline: none;
@@ -183,6 +203,12 @@
 				margin-left: 11px !important;
 				margin-right: 11px !important;
 				background-color: rgba(#fff, 0.5);
+				@include adaptive(767) {
+					width: 12px;
+					height: 12px;
+					margin-left: 6px !important;
+					margin-right: 6px !important;
+				}
 
 				&-active {
 					background-color: #ffffff;

@@ -3,6 +3,10 @@
 .try {
 	padding-top: 83px;
 	padding-bottom: 107px;
+	@include adaptive(767) {
+		padding-top: 55px;
+		padding-bottom: 55px;
+	}
 
 	&__title {
 		padding-bottom: 18px;
@@ -37,7 +41,14 @@
 		color: #030303;
 		text-align: center;
 		@include adaptive(1365) {
-			line-height: normal;
+			line-height: 2;
+		}
+		@include adaptive(1279) {
+			font-size: 22px;
+		}
+		@include adaptive(767) {
+			padding-bottom: 55px;
+			font-size: 18px;
 		}
 	}
 
@@ -55,6 +66,9 @@
 			padding-right: 60px;
 			@include adaptive(1023) {
 				padding-right: 0;
+			}
+			@include adaptive(767) {
+				padding-top: 0;
 			}
 		}
 
@@ -77,6 +91,9 @@
 		@include adaptive(1365) {
 			font-size: 20px;
 		}
+		@include adaptive(767) {
+			font-size: 18px;
+		}
 
 		&:not(:last-of-type) {
 			padding-bottom: 30px;
@@ -98,12 +115,18 @@
 			font-family: 'Quicksand', sans-serif;
 			font-size: 22px;
 			color: #040404;
+			@include adaptive(767) {
+				font-size: 18px;
+			}
 		}
 
 		a {
 			font-family: 'Quicksand', sans-serif;
 			font-size: 22px;
 			color: #040404;
+			@include adaptive(767) {
+				font-size: 20px;
+			}
 		}
 	}
 
@@ -119,6 +142,10 @@
 		@include adaptive(1023) {
 			margin-left: auto;
 			margin-right: auto;
+		}
+		@include adaptive(767) {
+			min-height: auto;
+			padding: 20px 15px;
 		}
 
 		&-field {
@@ -138,6 +165,9 @@
 			font-size: 20px;
 			line-height: 1;
 			color: #030303;
+			@include adaptive(767) {
+				font-size: 18px;
+			}
 		}
 
 		input {

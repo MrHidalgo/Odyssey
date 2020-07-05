@@ -12,6 +12,10 @@
 	&__wrapper {
 		display: flex;
 		height: 420px;
+		@include adaptive(767) {
+			height: auto;
+			flex-wrap: wrap;
+		}
 
 
 		&-left,
@@ -19,6 +23,10 @@
 			width: 50%;
 			height: 100%;
 			background-color: #ffffff;
+			@include adaptive(767) {
+				width: 100%;
+				height: 320px;
+			}
 		}
 
 		&-left {

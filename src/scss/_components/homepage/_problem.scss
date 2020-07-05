@@ -6,9 +6,15 @@
 	@include adaptive(1023) {
 		padding-bottom: 55px;
 	}
+	@include adaptive(767) {
+		padding-bottom: 35px;
+	}
 
 	&__title {
 		padding-bottom: 80px;
+		@include adaptive(767) {
+			padding-bottom: 75px;
+		}
 	}
 
 	&__box {
@@ -49,6 +55,9 @@
 			@include adaptive(1023) {
 				font-size: 19px;
 			}
+			@include adaptive(767) {
+				font-size: 17px;
+			}
 		}
 
 		&:before,
@@ -78,6 +87,9 @@
 			@include adaptive(1023) {
 				justify-content: space-between;
 			}
+			@include adaptive(767) {
+				justify-content: center;
+			}
 		}
 
 		&-col {
@@ -94,6 +106,9 @@
 				@include adaptive(1023) {
 					width: calc(100% / 2);
 					padding-bottom: 0;
+				}
+				@include adaptive(767) {
+					width: 100%;
 				}
 			}
 
@@ -114,6 +129,9 @@
 				padding-top: 50px;
 				@include adaptive(1023) {
 					padding-top: 0;
+				}
+				@include adaptive(767) {
+					width: 100%;
 				}
 			}
 

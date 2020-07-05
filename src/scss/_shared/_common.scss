@@ -29,6 +29,10 @@
 		font-size: 12px;
 		line-height: 63px;
 		color: #fff;
+		@include adaptive(767) {
+			line-height: 1.8;
+			text-align: center;
+		}
 	}
 }
 

@@ -3,12 +3,20 @@
 .enterprise {
 	padding-top: 95px;
 	padding-bottom: 50px;
+	@include adaptive(767) {
+		padding-top: 55px;
+		padding-bottom: 55px;
+	}
 
 	&__title {
 		padding-bottom: 84px;
+		@include adaptive(767) {
+			padding-bottom: 75px;
+		}
 	}
 
 	&__box {
+		position: relative;
 		display: flex;
 		width: 100%;
 		max-width: 725px;
@@ -16,6 +24,9 @@
 		border-radius: 88.5px;
 		box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
 		background-color: #e6e6e6;
+		@include adaptive(767) {
+			border-radius: 25px;
+		}
 
 		&-1 {
 			.enterprise__box-badge {
@@ -61,6 +72,10 @@
 				justify-content: flex-end;
 				width: 215px;
 				padding-right: 15px;
+				@include adaptive(767) {
+					padding: 0;
+					width: auto;
+				}
 			}
 			&:nth-of-type(2) {
 				align-items: center;
@@ -68,6 +83,13 @@
 				min-width: 1px;
 				max-width: 100%;
 				padding-right: 50px;
+				@include adaptive(767) {
+					position: relative;
+					width: calc(100% + 200px);
+					max-width: calc(100% + 200px);
+					min-width: unset;
+					padding: 55px 15px 15px;
+				}
 			}
 		}
 
@@ -95,6 +117,12 @@
 			height: 75px;
 			border-radius: 0 0 8px 8px;
 			background-color: #ffffff;
+			@include adaptive(767) {
+				position: absolute;
+				top: -26px;
+				left: 50px;
+				height: 55px;
+			}
 
 			&:before {
 				content: '';
@@ -113,6 +141,10 @@
 				letter-spacing: 0.02em;
 				line-height: 72px;
 				color: #fff;
+				@include adaptive(767) {
+					font-size: 18px;
+					line-height: 55px;
+				}
 			}
 		}
 

@@ -3,6 +3,9 @@
 .footer {
 	&__wrapper {
 		display: flex;
+		@include adaptive(767) {
+			flex-wrap: wrap;
+		}
 
 		&-1 {
 			background-color: #3b3b3b;
@@ -13,6 +16,9 @@
 			align-items: center;
 			min-height: 53px;
 			background-color: #707070;
+			@include adaptive(767) {
+				padding: 15px 0 15px;
+			}
 		}
 	}
 
@@ -22,6 +28,9 @@
 		padding-top: 25px;
 		padding-bottom: 25px;
 		min-height: 192px;
+		@include adaptive(767) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__col {
@@ -34,15 +43,41 @@
 				flex: unset;
 				padding-right: 50px;
 			}
+			@include adaptive(767) {
+				display: flex;
+				justify-content: center;
+				width: 100%;
+				padding-right: 0;
+				padding-bottom: 25px;
+			}
 		}
 
 		&-2 {
 			display: flex;
 			justify-content: flex-end;
+			@include adaptive(767) {
+				flex-wrap: wrap;
+				align-items: center;
+			}
 
 			> div {
 				width: 100%;
 				max-width: 200px;
+				@include adaptive(767) {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
+					&:nth-of-type(1) {
+						max-width: 100%;
+						padding-bottom: 25px;
+					}
+
+					&:nth-of-type(2),
+					&:nth-of-type(3) {
+						max-width: 50%;
+					}
+				}
 			}
 		}
 	}
@@ -57,6 +92,9 @@
 	ul {
 		display: flex;
 		flex-direction: column;
+		@include adaptive(767) {
+			align-items: center;
+		}
 
 		li {
 			display: flex;
@@ -66,6 +104,9 @@
 				font-size: 16px;
 				line-height: 36px;
 				color: #fff;
+				@include adaptive(767) {
+					text-align: center;
+				}
 			}
 		}
 	}
