@@ -64,8 +64,8 @@
 			&:before {
 				content: '';
 				z-index: 1;
-				opacity: 0.69;
-				background-image: linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
+				opacity: 0.62;
+				background: linear-gradient(45deg, rgba(205,157,171,1) 0%,rgba(120,161,147,1) 26%,rgba(125,182,210,1) 68%,rgba(103,79,86,1) 100%);
 			}
 
 			&:after {

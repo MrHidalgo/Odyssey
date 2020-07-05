@@ -729,10 +729,9 @@ picture {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#cd9dab), color-stop(26.21%, #78a193), color-stop(68.6%, #7db6d2), to(#674f56));
-  background-image: -webkit-linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
-  background-image: -o-linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
-  background-image: linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
+  background: -webkit-linear-gradient(45deg, #cd9dab 0%, #78a193 26%, #7db6d2 68%, #674f56 100%);
+  background: -o-linear-gradient(45deg, #cd9dab 0%, #78a193 26%, #7db6d2 68%, #674f56 100%);
+  background: linear-gradient(45deg, #cd9dab 0%, #78a193 26%, #7db6d2 68%, #674f56 100%);
 }
 
 /* line 30, src/scss/_components/homepage/_main.scss */
@@ -1163,11 +1162,10 @@ picture {
 .see__wrapper-right:before {
   content: '';
   z-index: 1;
-  opacity: 0.69;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#cd9dab), color-stop(26.21%, #78a193), color-stop(68.6%, #7db6d2), to(#674f56));
-  background-image: -webkit-linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
-  background-image: -o-linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
-  background-image: linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
+  opacity: 0.62;
+  background: -webkit-linear-gradient(45deg, #cd9dab 0%, #78a193 26%, #7db6d2 68%, #674f56 100%);
+  background: -o-linear-gradient(45deg, #cd9dab 0%, #78a193 26%, #7db6d2 68%, #674f56 100%);
+  background: linear-gradient(45deg, #cd9dab 0%, #78a193 26%, #7db6d2 68%, #674f56 100%);
 }
 
 /* line 71, src/scss/_components/homepage/_see.scss */
@@ -1499,16 +1497,15 @@ picture {
 .trust:before {
   content: '';
   z-index: 1;
-  opacity: 0.69;
+  opacity: 0.5;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#cd9dab), color-stop(26.21%, #78a193), color-stop(68.6%, #7db6d2), to(#674f56));
-  background-image: -webkit-linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
-  background-image: -o-linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
-  background-image: linear-gradient(#cd9dab 0%, #78a193 26.21%, #7db6d2 68.6%, #674f56 100%);
+  background: -webkit-linear-gradient(45deg, #cd9dab 0%, #78a193 26%, #7db6d2 68%, #674f56 100%);
+  background: -o-linear-gradient(45deg, #cd9dab 0%, #78a193 26%, #7db6d2 68%, #674f56 100%);
+  background: linear-gradient(45deg, #cd9dab 0%, #78a193 26%, #7db6d2 68%, #674f56 100%);
 }
 
 /* line 22, src/scss/_components/homepage/_trust.scss */
