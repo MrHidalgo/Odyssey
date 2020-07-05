@@ -7,6 +7,9 @@
 		height: 100%;
 		position: relative;
 		padding-bottom: 75px;
+		@include adaptive(1279) {
+			padding-bottom: 50px;
+		}
 
 		&-img {
 			position: absolute;
@@ -53,6 +56,12 @@
 			padding-top: 75px;
 			margin-left: auto;
 			margin-right: auto;
+			@include adaptive(1279) {
+				padding-top: 50px;
+			}
+			@include adaptive(1023) {
+				padding-top: 75px;
+			}
 		}
 
 		&-title {
@@ -61,6 +70,12 @@
 			font-size: 40px;
 			letter-spacing: 0.04em;
 			color: #fff;
+			@include adaptive(1279) {
+				font-size: 36px;
+			}
+			@include adaptive(1023) {
+				font-size: 33px;
+			}
 
 			&--hidden {
 				opacity: 0;
@@ -77,6 +92,9 @@
 			line-height: 35px;
 			color: #fff;
 			text-align: center;
+			@include adaptive(1279) {
+				font-size: 20px;
+			}
 		}
 
 		&-btn {
@@ -142,6 +160,9 @@
 	.swiper {
 		&-container {
 			height: 510px;
+			@include adaptive(1279) {
+				height: 475px;
+			}
 		}
 
 		&-pagination {
@@ -150,6 +171,9 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			@include adaptive(1023) {
+				bottom: 40px;
+			}
 
 			&-bullet {
 				outline: none;

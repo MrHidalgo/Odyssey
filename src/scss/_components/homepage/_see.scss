@@ -4,6 +4,10 @@
 	padding-top: 90px;
 	padding-bottom: 90px;
 	background-color: #d9d9d9;
+	@include adaptive(1023) {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -22,6 +26,9 @@
 			display: flex;
 			align-items: center;
 			padding-left: 88px;
+			@include adaptive(1023) {
+				padding-left: 40px;
+			}
 		}
 
 		&-right {

@@ -8,6 +8,9 @@
 		position: relative;
 		width: 100%;
 		max-width: 430px;
+		@include adaptive(1023) {
+			max-width: 100%;
+		}
 
 		&-1 {
 			.description__box-head {
@@ -61,10 +64,17 @@
 			max-width: 1100px;
 			margin-left: auto;
 			margin-right: auto;
+			@include adaptive(1023) {
+				justify-content: space-between;
+			}
 
 			> div {
 				width: 50%;
 				padding-bottom: 35px;
+				@include adaptive(1023) {
+					width: 100% !important;
+					max-width: calc((100% - 15px) / 2);
+				}
 
 				&:nth-of-type(2),
 				&:nth-of-type(4) {
@@ -73,19 +83,34 @@
 
 				&:nth-of-type(1) {
 					padding-right: 80px;
+					@include adaptive(1023) {
+						padding-right: 0;
+					}
 				}
 
 				&:nth-of-type(2) {
 					padding-left: 35px;
+					@include adaptive(1023) {
+						padding-left: 0;
+					}
 				}
 
 				&:nth-of-type(3) {
 					padding-right: 80px;
 					padding-left: 40px;
+					@include adaptive(1279) {
+						padding-right: 0;
+					}
+					@include adaptive(1023) {
+						padding-left: 0;
+					}
 				}
 
 				&:nth-of-type(4) {
 					padding-left: 75px;
+					@include adaptive(1023) {
+						padding-left: 0;
+					}
 				}
 			}
 		}
@@ -137,6 +162,9 @@
 				line-height: 72px;
 				text-align: center;
 				color: #fff;
+				@include adaptive(1023) {
+					font-size: 18px;
+				}
 			}
 		}
 
@@ -158,6 +186,10 @@
 					font-size: 17px;
 					line-height: 35px;
 					color: #000;
+					@include adaptive(1023) {
+						font-size: 15px;
+						line-height: 30px;
+					}
 				}
 			}
 		}

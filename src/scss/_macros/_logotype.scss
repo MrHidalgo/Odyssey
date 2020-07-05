@@ -4,6 +4,9 @@
 	&__btn {
 		display: flex;
 		max-width: 150px;
+		@include adaptive(1023) {
+			max-width: 125px;
+		}
 	}
 
 	&__img {

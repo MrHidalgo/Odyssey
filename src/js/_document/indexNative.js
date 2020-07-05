@@ -40,6 +40,7 @@
 
 		// lib
 		initSwiper();
+		initHamburger();
 		// ==========================================
 
 		// callback

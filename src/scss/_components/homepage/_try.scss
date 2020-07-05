@@ -36,10 +36,16 @@
 		line-height: 92px;
 		color: #030303;
 		text-align: center;
+		@include adaptive(1365) {
+			line-height: normal;
+		}
 	}
 
 	&__wrapper {
 		display: flex;
+		@include adaptive(1023) {
+			flex-wrap: wrap;
+		}
 
 		&-left {
 			flex: 1;
@@ -47,11 +53,18 @@
 			max-width: 100%;
 			padding-top: 24px;
 			padding-right: 60px;
+			@include adaptive(1023) {
+				padding-right: 0;
+			}
 		}
 
 		&-right {
 			width: 100%;
 			max-width: 500px;
+			@include adaptive(1023) {
+				max-width: 100%;
+				padding-top: 50px;
+			}
 		}
 	}
 
@@ -61,6 +74,9 @@
 		letter-spacing: 0.06em;
 		line-height: 40px;
 		color: #040404;
+		@include adaptive(1365) {
+			font-size: 20px;
+		}
 
 		&:not(:last-of-type) {
 			padding-bottom: 30px;
@@ -100,6 +116,10 @@
 		border: 1px solid #707070;
 		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 		background-color: #fff;
+		@include adaptive(1023) {
+			margin-left: auto;
+			margin-right: auto;
+		}
 
 		&-field {
 			display: flex;

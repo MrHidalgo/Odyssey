@@ -5,6 +5,12 @@
 	letter-spacing: 0.04em;
 	color: #040404;
 	text-align: center;
+	@include adaptive(1279) {
+		font-size: 33px;
+	}
+	@include adaptive(1023) {
+		font-size: 30px;
+	}
 }
 
 // TITLE :: END

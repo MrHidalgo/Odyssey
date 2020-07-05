@@ -8,18 +8,70 @@
 	width: 100%;
 	background-color: #3b3b3b;
 
+	&__mobile {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex: 1;
+		min-width: 1px;
+		max-width: 100%;
+		@include adaptive(1023) {
+			opacity: 0;
+			visibility: hidden;
+			transform: scale(0.55);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			z-index: -1;
+			overflow: hidden auto;
+			position: fixed;
+			top: 65px;
+			left: 0;
+			width: 100%;
+			height: calc(100% - 65px);
+			padding: 50px 30px;
+			background-color: #3b3b3b;
+			transform-origin: center;
+			backface-visibility: hidden;
+			@include transition(opacity, visibility, transform);
+
+			&.is-open {
+				opacity: 1;
+				z-index: 1100;
+				visibility: visible;
+				transform: scale(1);
+				@include transition(opacity, visibility, transform);
+			}
+		}
+	}
+
 	&__wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		height: 80px;
+		@include adaptive(1023) {
+			height: 65px;
+		}
 
 		&-left,
 		&-right {
 			width: 200px;
+			@include adaptive(1023) {
+				width: auto;
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
 		}
 
-		&-left {}
+		&-left {
+			@include adaptive(1023) {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 100%;
+			}
+		}
 
 		&-middle {
 			display: flex;
@@ -27,6 +79,9 @@
 			flex: 1;
 			min-width: 1px;
 			max-width: 100%;
+			@include adaptive(1023) {
+				flex: unset;
+			}
 		}
 
 		&-right {
@@ -38,6 +93,9 @@
 	&__nav {
 		display: flex;
 		align-items: center;
+		@include adaptive(1023) {
+			flex-direction: column;
+		}
 
 		&-item {
 			display: flex;
@@ -55,6 +113,13 @@
 			letter-spacing: 0.04em;
 			color: #fff;
 			@include transition(color);
+			@include adaptive(1279) {
+				font-size: 16px;
+			}
+			@include adaptive(1023) {
+				min-height: 45px;
+				font-size: 18px;
+			}
 
 			&:hover {
 				color: #d9d9d9;
@@ -91,6 +156,13 @@
 				bottom: 0;
 				transform: translateY(7px);
 			}
+		}
+	}
+
+	.hamburger {
+		display: none;
+		@include adaptive(1023) {
+			display: flex;
 		}
 	}
 }
