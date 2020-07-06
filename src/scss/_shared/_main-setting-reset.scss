@@ -1,10 +1,9 @@
 html,
 body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
 
   &.is-hideScroll {
-    width: 100%;
     overflow: hidden !important;
   }
 }
@@ -25,7 +24,7 @@ body {
   line-height: 1.42857143;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Roboto", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,7 +32,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
 	padding-top: 80px;
 	@include adaptive(1023) {
 		padding-top: 65px;

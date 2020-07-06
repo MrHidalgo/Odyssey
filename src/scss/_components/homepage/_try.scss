@@ -1,8 +1,8 @@
 // SECTION :: START
 
 .try {
-	padding-top: 83px;
-	padding-bottom: 107px;
+	padding-top: 125px;
+	padding-bottom: 125px;
 	@include adaptive(767) {
 		padding-top: 55px;
 		padding-bottom: 55px;
@@ -28,18 +28,15 @@
 		width: 148px;
 		height: 8px;
 		background-color: #9ec7db;
-		margin-bottom: 45px;
+		margin-bottom: 30px;
 	}
 
 	&__desc {
 		padding-bottom: 78px;
-		font-family: 'Quicksand', sans-serif;
-		font-weight: 500;
 		font-size: 24px;
 		letter-spacing: 0.17em;
 		line-height: 92px;
 		color: #030303;
-		text-align: center;
 		@include adaptive(1365) {
 			line-height: 2;
 		}
@@ -83,7 +80,6 @@
 	}
 
 	&__text {
-		font-family: 'Quicksand', sans-serif;
 		font-size: 22px;
 		letter-spacing: 0.06em;
 		line-height: 40px;
@@ -109,24 +105,20 @@
 	&__info {
 		display: flex;
 		justify-content: space-between;
+		padding-right: 50px;
+		@include adaptive(767) {
+			padding-right: 0;
+		}
 
 		&-title {
-			padding-bottom: 30px;
-			font-family: 'Quicksand', sans-serif;
-			font-size: 22px;
+			padding-bottom: 15px;
+			font-size: 18px;
 			color: #040404;
-			@include adaptive(767) {
-				font-size: 18px;
-			}
 		}
 
 		a {
-			font-family: 'Quicksand', sans-serif;
-			font-size: 22px;
+			font-size: 18px;
 			color: #040404;
-			@include adaptive(767) {
-				font-size: 20px;
-			}
 		}
 	}
 
@@ -161,7 +153,6 @@
 		label {
 			display: flex;
 			padding-bottom: 15px;
-			font-family: 'Quicksand', sans-serif;
 			font-size: 20px;
 			line-height: 1;
 			color: #030303;
@@ -179,7 +170,6 @@
 			border: 1px solid #707070;
 			background-color: #fff;
 			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-			font-family: 'Quicksand', sans-serif;
 			font-size: 18px;
 			line-height: 1;
 			color: #030303;

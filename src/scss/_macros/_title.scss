@@ -1,13 +1,11 @@
 // TITLE :: START
 
 .c-title {
-	font-size: 36px;
+	font-size: 33px;
 	letter-spacing: 0.04em;
 	color: #040404;
 	text-align: center;
-	@include adaptive(1279) {
-		font-size: 33px;
-	}
+	@extend %fontsVerdana;
 	@include adaptive(1023) {
 		font-size: 30px;
 	}

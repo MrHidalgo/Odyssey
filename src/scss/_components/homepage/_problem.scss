@@ -1,8 +1,8 @@
 // SECTION :: START
 
 .problem {
-	padding-top: 55px;
-	padding-bottom: 120px;
+	padding-top: 75px;
+	padding-bottom: 155px;
 	@include adaptive(1023) {
 		padding-bottom: 55px;
 	}
@@ -48,7 +48,6 @@
 		p {
 			z-index: 5;
 			position: relative;
-			font-family: 'Quicksand', sans-serif;
 			font-size: 21px;
 			text-align: center;
 			color: #040404;

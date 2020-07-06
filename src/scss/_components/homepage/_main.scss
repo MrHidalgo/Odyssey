@@ -73,12 +73,10 @@
 		&-title {
 			padding-bottom: 24px;
 			text-align: center;
-			font-size: 40px;
+			font-size: 36px;
 			letter-spacing: 0.04em;
 			color: #fff;
-			@include adaptive(1279) {
-				font-size: 36px;
-			}
+			@extend %fontsVerdana;
 			@include adaptive(1023) {
 				font-size: 33px;
 			}
@@ -97,7 +95,6 @@
 		&-desc {
 			min-height: 180px;
 			padding-bottom: 41px;
-			font-family: 'Quicksand', sans-serif;
 			font-size: 22px;
 			letter-spacing: 0.03em;
 			line-height: 35px;

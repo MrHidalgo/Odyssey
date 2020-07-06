@@ -1,15 +1,15 @@
 // SECTION :: START
 
 .enterprise {
-	padding-top: 95px;
-	padding-bottom: 50px;
+	padding-top: 100px;
+	padding-bottom: 155px;
 	@include adaptive(767) {
 		padding-top: 55px;
-		padding-bottom: 55px;
+		padding-bottom: 100px;
 	}
 
 	&__title {
-		padding-bottom: 84px;
+		padding-bottom: 100px;
 		@include adaptive(767) {
 			padding-bottom: 75px;
 		}
@@ -138,6 +138,7 @@
 
 			span {
 				font-size: 20px;
+				@extend %fontsVerdana;
 				letter-spacing: 0.02em;
 				line-height: 72px;
 				color: #fff;
@@ -149,8 +150,7 @@
 		}
 
 		p {
-			font-family: 'Quicksand', sans-serif;
-			font-size: 17px;
+			font-size: 18px;
 			line-height: 36px;
 			color: #040404;
 		}

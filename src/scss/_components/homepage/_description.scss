@@ -1,8 +1,8 @@
 // SECTION :: START
 
 .description {
-	padding-top: 60px;
-	padding-bottom: 30px;
+	padding-top: 75px;
+	padding-bottom: 100px;
 
 	&__box {
 		position: relative;
@@ -140,7 +140,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			height: 75px;
+			height: 65px;
 			box-shadow: 0 1.67px 1.67px rgba(0, 0, 0, 0.3);
 
 			&:before {
@@ -170,8 +170,9 @@
 
 			p {
 				font-size: 20px;
+				@extend %fontsVerdana;
 				letter-spacing: 0.03em;
-				line-height: 72px;
+				line-height: 65px;
 				text-align: center;
 				color: #fff;
 				@include adaptive(1023) {
@@ -197,8 +198,7 @@
 
 				li {
 					display: flex;
-					font-family: 'Quicksand', sans-serif;
-					font-size: 17px;
+					font-size: 18px;
 					line-height: 35px;
 					color: #000;
 					@include adaptive(1023) {
