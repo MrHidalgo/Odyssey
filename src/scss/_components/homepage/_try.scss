@@ -9,7 +9,7 @@
 	}
 
 	&__title {
-		padding-bottom: 18px;
+		padding-bottom: 30px;
 
 		&-wrapper {
 			display: flex;
@@ -21,14 +21,6 @@
 				margin-right: auto;
 			}
 		}
-	}
-
-	&__line {
-		display: flex;
-		width: 148px;
-		height: 8px;
-		background-color: #9ec7db;
-		margin-bottom: 30px;
 	}
 
 	&__desc {
