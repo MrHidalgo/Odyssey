@@ -19,16 +19,16 @@ header#header.header
 
 					ul.header__nav
 						li.header__nav-item
-							a.header__nav-link(href="/product.html" class!= (pageClassName === 'p-product')?'is-active':'')
+							a.header__nav-link(href="#" class!= (pageClassName === 'p-product')?'is-active':'')
 								span Product
 						li.header__nav-item
 							a.header__nav-link(href="/solutions.html" class!= (pageClassName === 'p-solutions')?'is-active':'')
 								span Solutions
 						li.header__nav-item
-							a.header__nav-link(href="#")
+							a.header__nav-link(href="#" class!= (pageClassName === 'p-partners')?'is-active':'')
 								span Partners
 						li.header__nav-item
-							a.header__nav-link(href="#")
+							a.header__nav-link(href="/company.html" class!= (pageClassName === 'p-company')?'is-active':'')
 								span Company
 						li.header__nav-item
 							a.header__nav-link(href="/contacts.html" class!= (pageClassName === 'p-contacts')?'is-active':'')

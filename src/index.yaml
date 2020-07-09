@@ -7,8 +7,8 @@ PageList:
 - file: solutions.html
   titleName: Solutions
   ready: 55
-- file: product.html
-  titleName: Product
+- file: company.html
+  titleName: Company
   ready: 55
 - file: contacts.html
   titleName: Contact Us

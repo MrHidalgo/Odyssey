@@ -1,0 +1,12 @@
+---
+title: Odyssey | Company
+
+pageClassName: p-company
+---
+extends shared/_layout
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/company/_main
+		include components/company/_about
