@@ -3848,4 +3848,80 @@ picture {
   color: #040404;
 }
 
+/* line 3, src/scss/_components/contacts/_main.scss */
+.c-main {
+  position: relative;
+  background-image: url("../img/img-contacts-main-bg@2x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 10, src/scss/_components/contacts/_main.scss */
+.c-main:before {
+  content: '';
+  z-index: 1;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(45deg, #cd9dab 0%, #78a193 26%, #7db6d2 68%, #674f56 100%);
+  background: -o-linear-gradient(45deg, #cd9dab 0%, #78a193 26%, #7db6d2 68%, #674f56 100%);
+  background: linear-gradient(45deg, #cd9dab 0%, #78a193 26%, #7db6d2 68%, #674f56 100%);
+}
+
+/* line 22, src/scss/_components/contacts/_main.scss */
+.c-main:after {
+  content: '';
+  z-index: 2;
+  opacity: 0.35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #040404;
+}
+
+/* line 34, src/scss/_components/contacts/_main.scss */
+.c-main__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 380px;
+}
+
+/* line 41, src/scss/_components/contacts/_main.scss */
+.c-main__title {
+  padding-bottom: 10px;
+  color: #ffffff;
+}
+
+/* line 45, src/scss/_components/contacts/_main.scss */
+.c-main__title-wrapper {
+  z-index: 10;
+  position: relative;
+  padding: 35px 45px;
+  border: 3px solid #fff;
+}
+
+/* line 52, src/scss/_components/contacts/_main.scss */
+.c-main__title-line {
+  width: 85px;
+  height: 6px;
+  background-color: #9ec7db;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

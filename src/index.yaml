@@ -10,6 +10,9 @@ PageList:
 - file: product.html
   titleName: Product
   ready: 55
+- file: contacts.html
+  titleName: Contact Us
+  ready: 55
 - file: terms.html
   titleName: Terms Of Service
   ready: 55

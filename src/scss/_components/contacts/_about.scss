@@ -1,0 +1,26 @@
+// SECTION :: START
+
+.pp-about {
+	padding-top: 100px;
+	padding-bottom: 200px;
+
+	&__subtitle {
+		@extend %fontsVerdana;
+		font-weight: 700;
+		font-size: 20px;
+		letter-spacing: 0.03em;
+		line-height: 42px;
+		color: #040404;
+	}
+
+	&__desc {
+		padding-bottom: 40px;
+		@extend %fontsVerdana;
+		font-size: 20px;
+		letter-spacing: 0.03em;
+		line-height: 42px;
+		color: #040404;
+	}
+}
+
+// SECTION :: END
