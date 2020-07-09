@@ -3,7 +3,16 @@ ProjectTitle: Odyssey
 PageList:
 - file: index.html
   titleName: Home
-  ready: 90
-- file: solution.html
-  titleName: Solution
-  ready: 1
+  ready: 100
+- file: solutions.html
+  titleName: Solutions
+  ready: 55
+- file: product.html
+  titleName: Product
+  ready: 55
+- file: terms.html
+  titleName: Terms Of Service
+  ready: 55
+- file: privacy.html
+  titleName: Privacy Policy
+  ready: 55

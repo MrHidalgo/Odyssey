@@ -1,0 +1,12 @@
+---
+title: Odyssey | Solution
+
+pageClassName: p-privacy
+---
+extends shared/_layout
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/privacy/_main
+		include components/privacy/_about

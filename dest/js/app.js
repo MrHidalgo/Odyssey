@@ -180,9 +180,11 @@ var initSwiper = function initSwiper() {
       }
     }
 
-    document.querySelector('[see-play-js]').addEventListener('click', function (ev) {
-      playPause(myVideo);
-    }, false);
+    if (myVideo) {
+      document.querySelector('[see-play-js]').addEventListener('click', function (ev) {
+        playPause(myVideo);
+      }, false);
+    }
   };
   /*
   * CALLBACK :: end

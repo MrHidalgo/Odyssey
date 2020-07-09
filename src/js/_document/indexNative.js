@@ -20,9 +20,11 @@
 			}
 		}
 
-		document.querySelector('[see-play-js]').addEventListener('click', (ev) => {
-			playPause(myVideo);
-		}, false);
+		if(myVideo) {
+			document.querySelector('[see-play-js]').addEventListener('click', (ev) => {
+				playPause(myVideo);
+			}, false);
+		}
 	};
 	/*
 	* CALLBACK :: end

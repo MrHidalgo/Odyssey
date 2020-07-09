@@ -8,7 +8,7 @@ header#header.header
 			.header__wrapper-left
 
 				.logo.logo--header
-					a.logo__btn(href="#")
+					a.logo__btn(href="/")
 						img.logo__img(src="img/logo.svg" alt="")
 
 				+hamburger('spring')
@@ -19,15 +19,20 @@ header#header.header
 
 					ul.header__nav
 						li.header__nav-item
-							a.header__nav-link(href="#") Product
+							a.header__nav-link(href="/product.html" class!= (pageClassName === 'p-product')?'is-active':'')
+								span Product
 						li.header__nav-item
-							a.header__nav-link(href="#") Solutions
+							a.header__nav-link(href="/solutions.html" class!= (pageClassName === 'p-solutions')?'is-active':'')
+								span Solutions
 						li.header__nav-item
-							a.header__nav-link(href="#") Partners
+							a.header__nav-link(href="#")
+								span Partners
 						li.header__nav-item
-							a.header__nav-link(href="#") Company
+							a.header__nav-link(href="#")
+								span Company
 						li.header__nav-item
-							a.header__nav-link(href="#") Contact us
+							a.header__nav-link(href="#")
+								span Contact us
 
 				.header__wrapper-right
 
