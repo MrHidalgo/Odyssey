@@ -4,8 +4,14 @@ PageList:
 - file: index.html
   titleName: Home
   ready: 100
+- file: product.html
+  titleName: Product
+  ready: 55
 - file: solutions.html
   titleName: Solutions
+  ready: 55
+- file: support.html
+  titleName: Support
   ready: 55
 - file: company.html
   titleName: Company

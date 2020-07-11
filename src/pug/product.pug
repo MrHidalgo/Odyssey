@@ -1,0 +1,13 @@
+---
+title: Odyssey | Product
+
+pageClassName: p-product
+---
+extends shared/_layout
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/product/_main
+		include components/product/_about
+		include components/product/_features

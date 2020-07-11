@@ -1,0 +1,126 @@
+// SECTION :: START
+
+.pr-features {
+	padding-bottom: 150px;
+
+	&__title {
+		padding-bottom: 15px;
+
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			padding-bottom: 55px;
+		}
+
+		&-line {
+			width: 85px;
+			height: 8px;
+			background-color: #9ec7db;
+		}
+	}
+
+	&__box {
+		display: flex;
+
+		&-1 {
+			background-color: rgba(#CD9DAB, 0.15);
+		}
+		&-2 {
+			background-color: rgba(#78A193, 0.15);
+		}
+		&-3 {
+			background-color: rgba(#C38749, 0.15);
+		}
+		&-4 {
+			background-color: rgba(#CD9DAB, 0.15);
+		}
+		&-5 {
+			background-color: rgba(#9EC7DB, 0.15);
+		}
+
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 55px;
+
+			> div {
+				padding-bottom: 55px;
+			}
+		}
+
+		&-content {
+			display: flex;
+			align-items: center;
+			min-height: 110px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+
+			> div {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				max-width: calc(100% / 3);
+
+				&:nth-of-type(2) {
+					justify-content: center;
+
+					p,
+					span {
+						width: 50%;
+					}
+
+					p {
+						display: flex;
+						align-items: center;
+						justify-content: flex-end;
+						padding-right: 30px;
+					}
+				}
+
+				p {
+					width: 100px;
+				}
+
+				.icon-font {
+					color: #040404;
+
+					&.icon-devices { font-size: 60px; }
+					&.icon-security { font-size: 66px; }
+					&.icon-warning { font-size: 57px; }
+					&.icon-browser_not_supported { font-size: 55px; }
+					&.icon-campaign { font-size: 48px; }
+					&.icon-games { font-size: 60px; }
+					&.icon-phonelink_lock { font-size: 65px; }
+					&.icon-build { font-size: 60px; }
+					&.icon-search { font-size: 52px; }
+					&.icon-developer_board { font-size: 55px; }
+					&.icon-construction { font-size: 55px; }
+					&.icon-build_circle { font-size: 65px; }
+				}
+
+				span {
+					//flex: 1;
+					//min-width: 1px;
+					//max-width: 100%;
+					font-size: 24px;
+					letter-spacing: 0.04em;
+					color: #040404;
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+
+	.c-btn {
+		min-width: 220px;
+		margin-left: 25px;
+		margin-right: 25px;
+
+		&__wrapper {
+			justify-content: center;
+		}
+	}
+}
+
+// SECTION :: END

@@ -27,20 +27,56 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == linkedin {
+	@if $filename == browser_not_supported {
 		$char: "\E001";
 	}
-	@if $filename == pause {
+	@if $filename == build {
 		$char: "\E002";
 	}
-	@if $filename == play {
+	@if $filename == build_circle {
 		$char: "\E003";
 	}
-	@if $filename == quotes {
+	@if $filename == campaign {
 		$char: "\E004";
 	}
-	@if $filename == twitter {
+	@if $filename == construction {
 		$char: "\E005";
+	}
+	@if $filename == developer_board {
+		$char: "\E006";
+	}
+	@if $filename == devices {
+		$char: "\E007";
+	}
+	@if $filename == games {
+		$char: "\E008";
+	}
+	@if $filename == linkedin {
+		$char: "\E009";
+	}
+	@if $filename == pause {
+		$char: "\E00A";
+	}
+	@if $filename == phonelink_lock {
+		$char: "\E00B";
+	}
+	@if $filename == play {
+		$char: "\E00C";
+	}
+	@if $filename == quotes {
+		$char: "\E00D";
+	}
+	@if $filename == search {
+		$char: "\E00E";
+	}
+	@if $filename == security {
+		$char: "\E00F";
+	}
+	@if $filename == twitter {
+		$char: "\E010";
+	}
+	@if $filename == warning {
+		$char: "\E011";
 	}
 
 	@return $char;
@@ -57,12 +93,48 @@
 	}
 }
 
+.icon-browser_not_supported {
+	@include icon(browser_not_supported);
+
+}
+.icon-build {
+	@include icon(build);
+
+}
+.icon-build_circle {
+	@include icon(build_circle);
+
+}
+.icon-campaign {
+	@include icon(campaign);
+
+}
+.icon-construction {
+	@include icon(construction);
+
+}
+.icon-developer_board {
+	@include icon(developer_board);
+
+}
+.icon-devices {
+	@include icon(devices);
+
+}
+.icon-games {
+	@include icon(games);
+
+}
 .icon-linkedin {
 	@include icon(linkedin);
 
 }
 .icon-pause {
 	@include icon(pause);
+
+}
+.icon-phonelink_lock {
+	@include icon(phonelink_lock);
 
 }
 .icon-play {
@@ -73,7 +145,19 @@
 	@include icon(quotes);
 
 }
+.icon-search {
+	@include icon(search);
+
+}
+.icon-security {
+	@include icon(security);
+
+}
 .icon-twitter {
 	@include icon(twitter);
+
+}
+.icon-warning {
+	@include icon(warning);
 
 }

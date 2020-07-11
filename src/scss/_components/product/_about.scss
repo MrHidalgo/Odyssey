@@ -1,0 +1,26 @@
+// SECTION :: START
+
+.pr-about {
+	padding-top: 75px;
+	padding-bottom: 150px;
+
+	&__desc {
+		padding-bottom: 40px;
+		font-size: 18px;
+		letter-spacing: 0.04em;
+		line-height: 42px;
+		color: #040404;
+	}
+
+	.c-btn {
+		min-width: 220px;
+		margin-left: 25px;
+		margin-right: 25px;
+
+		&__wrapper {
+			justify-content: center;
+		}
+	}
+}
+
+// SECTION :: END
