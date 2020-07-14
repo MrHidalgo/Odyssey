@@ -14,7 +14,8 @@
 
 /* line 25, src/scss/_utilities/_extend.scss */
 .c-title, .c-btn span, .main__slide-title, .enterprise__box-badge span, .description__box-head p, .s-about, .p-about__desc, .t-about__desc, .t-about__title, .t-about ol li,
-.t-about ul li, .pp-about__subtitle, .pp-about__desc, .sp-about {
+.t-about ul li, .pp-about__title, .pp-about__desc, .pp-about ol li,
+.pp-about ul li, .sp-about {
   font-family: 'Verdana', sans-serif;
 }
 
@@ -3937,21 +3938,58 @@ picture {
 }
 
 /* line 7, src/scss/_components/privacy/_about.scss */
-.pp-about__subtitle {
-  font-weight: 700;
-  font-size: 20px;
+.pp-about__title {
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
   letter-spacing: 0.03em;
   line-height: 42px;
-  color: #040404;
+  color: #000;
 }
 
-/* line 16, src/scss/_components/privacy/_about.scss */
+/* line 17, src/scss/_components/privacy/_about.scss */
 .pp-about__desc {
   padding-bottom: 40px;
   font-size: 20px;
   letter-spacing: 0.03em;
   line-height: 42px;
   color: #040404;
+}
+
+/* line 26, src/scss/_components/privacy/_about.scss */
+.pp-about ol,
+.pp-about ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 31, src/scss/_components/privacy/_about.scss */
+.pp-about ol li,
+.pp-about ul li {
+  padding-bottom: 40px;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 42px;
+  color: #040404;
+}
+
+/* line 39, src/scss/_components/privacy/_about.scss */
+.pp-about ol li:last-of-type,
+.pp-about ul li:last-of-type {
+  padding-bottom: 80px;
+}
+
+/* line 43, src/scss/_components/privacy/_about.scss */
+.pp-about ol li strong,
+.pp-about ul li strong {
+  font-weight: 600;
 }
 
 /* line 3, src/scss/_components/contacts/_main.scss */

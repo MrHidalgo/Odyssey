@@ -4,13 +4,14 @@
 	padding-top: 100px;
 	padding-bottom: 200px;
 
-	&__subtitle {
+	&__title {
+		padding-bottom: 20px;
 		@extend %fontsVerdana;
-		font-weight: 700;
-		font-size: 20px;
+		font-size: 22px;
+		font-weight: 600;
 		letter-spacing: 0.03em;
 		line-height: 42px;
-		color: #040404;
+		color: #000;
 	}
 
 	&__desc {
@@ -20,6 +21,29 @@
 		letter-spacing: 0.03em;
 		line-height: 42px;
 		color: #040404;
+	}
+
+	ol,
+	ul {
+		display: flex;
+		flex-direction: column;
+
+		li {
+			padding-bottom: 40px;
+			@extend %fontsVerdana;
+			font-size: 20px;
+			letter-spacing: 0.03em;
+			line-height: 42px;
+			color: #040404;
+
+			&:last-of-type {
+				padding-bottom: 80px;
+			}
+
+			strong {
+				font-weight: 600;
+			}
+		}
 	}
 }
 
