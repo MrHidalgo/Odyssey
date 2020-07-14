@@ -5,14 +5,48 @@
 	padding-bottom: 200px;
 
 	&__desc {
+		padding-bottom: 40px;
 		@extend %fontsVerdana;
 		font-size: 20px;
 		letter-spacing: 0.03em;
 		line-height: 42px;
 		color: #040404;
 
-		&:not(:last-of-type) {
+		&:last-of-type {
+			padding-bottom: 80px;
+		}
+	}
+
+	&__title {
+		padding-bottom: 20px;
+		@extend %fontsVerdana;
+		font-size: 22px;
+		font-weight: 600;
+		letter-spacing: 0.03em;
+		line-height: 42px;
+		color: #000;
+	}
+
+	ol,
+	ul {
+		display: flex;
+		flex-direction: column;
+
+		li {
 			padding-bottom: 40px;
+			@extend %fontsVerdana;
+			font-size: 20px;
+			letter-spacing: 0.03em;
+			line-height: 42px;
+			color: #040404;
+
+			&:last-of-type {
+				padding-bottom: 80px;
+			}
+
+			strong {
+				font-weight: 600;
+			}
 		}
 	}
 }

@@ -45,7 +45,7 @@
 			padding-bottom: 55px;
 
 			> div {
-				padding-bottom: 55px;
+				padding-bottom: 40px;
 			}
 		}
 
@@ -85,25 +85,25 @@
 				.icon-font {
 					color: #040404;
 
-					&.icon-devices { font-size: 60px; }
-					&.icon-security { font-size: 66px; }
-					&.icon-warning { font-size: 57px; }
-					&.icon-browser_not_supported { font-size: 55px; }
-					&.icon-campaign { font-size: 48px; }
-					&.icon-games { font-size: 60px; }
-					&.icon-phonelink_lock { font-size: 65px; }
-					&.icon-build { font-size: 60px; }
-					&.icon-search { font-size: 52px; }
-					&.icon-developer_board { font-size: 55px; }
-					&.icon-construction { font-size: 55px; }
-					&.icon-build_circle { font-size: 65px; }
+					&.icon-devices { font-size: 55px; }
+					&.icon-security { font-size: 61px; }
+					&.icon-warning { font-size: 52px; }
+					&.icon-browser_not_supported { font-size: 50px; }
+					&.icon-campaign { font-size: 43px; }
+					&.icon-games { font-size: 55px; }
+					&.icon-phonelink_lock { font-size: 60px; }
+					&.icon-build { font-size: 55px; }
+					&.icon-search { font-size: 47px; }
+					&.icon-developer_board { font-size: 50px; }
+					&.icon-construction { font-size: 50px; }
+					&.icon-build_circle { font-size: 60px; }
 				}
 
 				span {
 					//flex: 1;
 					//min-width: 1px;
 					//max-width: 100%;
-					font-size: 24px;
+					font-size: 21px;
 					letter-spacing: 0.04em;
 					color: #040404;
 					text-transform: capitalize;

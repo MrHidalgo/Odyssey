@@ -120,8 +120,8 @@
 		min-height: 481px;
 		padding: 30px 35px 45px;
 		border-radius: 15px;
-		border: 1px solid #707070;
-		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+		border: 1px solid rgba(112, 112, 112, 0.3);
+		box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
 		background-color: #fff;
 		@include adaptive(1023) {
 			margin-left: auto;
@@ -159,9 +159,8 @@
 			height: 50px;
 			padding: 0 15px;
 			border-radius: 5px;
-			border: 1px solid #707070;
+			border: 1px solid rgba(112, 112, 112, 0.3);
 			background-color: #fff;
-			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 			font-size: 18px;
 			line-height: 1;
 			color: #030303;

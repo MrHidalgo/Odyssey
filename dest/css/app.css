@@ -13,7 +13,8 @@
 }
 
 /* line 25, src/scss/_utilities/_extend.scss */
-.c-title, .c-btn span, .main__slide-title, .enterprise__box-badge span, .description__box-head p, .s-about, .p-about__desc, .t-about__desc, .pp-about__subtitle, .pp-about__desc, .sp-about {
+.c-title, .c-btn span, .main__slide-title, .enterprise__box-badge span, .description__box-head p, .s-about, .p-about__desc, .t-about__desc, .t-about__title, .t-about ol li,
+.t-about ul li, .pp-about__subtitle, .pp-about__desc, .sp-about {
   font-family: 'Verdana', sans-serif;
 }
 
@@ -2409,7 +2410,7 @@ picture {
 /* line 3, src/scss/_components/homepage/_trust.scss */
 .trust {
   position: relative;
-  background-image: url("../img/img-trust-bg@2x.jpg");
+  background-image: url("../img/img-trust-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -3187,9 +3188,9 @@ picture {
   padding: 30px 35px 45px;
   -webkit-border-radius: 15px;
           border-radius: 15px;
-  border: 1px solid #707070;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
   background-color: #fff;
 }
 
@@ -3255,10 +3256,8 @@ picture {
   padding: 0 15px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  border: 1px solid #707070;
+  border: 1px solid rgba(112, 112, 112, 0.3);
   background-color: #fff;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   font-size: 18px;
   line-height: 1;
   color: #030303;
@@ -3797,15 +3796,62 @@ picture {
 
 /* line 7, src/scss/_components/terms/_about.scss */
 .t-about__desc {
+  padding-bottom: 40px;
   font-size: 20px;
   letter-spacing: 0.03em;
   line-height: 42px;
   color: #040404;
 }
 
-/* line 14, src/scss/_components/terms/_about.scss */
-.t-about__desc:not(:last-of-type) {
+/* line 15, src/scss/_components/terms/_about.scss */
+.t-about__desc:last-of-type {
+  padding-bottom: 80px;
+}
+
+/* line 20, src/scss/_components/terms/_about.scss */
+.t-about__title {
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 42px;
+  color: #000;
+}
+
+/* line 30, src/scss/_components/terms/_about.scss */
+.t-about ol,
+.t-about ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 35, src/scss/_components/terms/_about.scss */
+.t-about ol li,
+.t-about ul li {
   padding-bottom: 40px;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 42px;
+  color: #040404;
+}
+
+/* line 43, src/scss/_components/terms/_about.scss */
+.t-about ol li:last-of-type,
+.t-about ul li:last-of-type {
+  padding-bottom: 80px;
+}
+
+/* line 47, src/scss/_components/terms/_about.scss */
+.t-about ol li strong,
+.t-about ul li strong {
+  font-weight: 600;
 }
 
 /* line 3, src/scss/_components/privacy/_main.scss */
@@ -4379,7 +4425,7 @@ picture {
 
 /* line 47, src/scss/_components/product/_features.scss */
 .pr-features__box-wrapper > div {
-  padding-bottom: 55px;
+  padding-bottom: 40px;
 }
 
 /* line 52, src/scss/_components/product/_features.scss */
@@ -4455,67 +4501,67 @@ picture {
 
 /* line 88, src/scss/_components/product/_features.scss */
 .pr-features__box-content > div .icon-font.icon-devices {
-  font-size: 60px;
+  font-size: 55px;
 }
 
 /* line 89, src/scss/_components/product/_features.scss */
 .pr-features__box-content > div .icon-font.icon-security {
-  font-size: 66px;
+  font-size: 61px;
 }
 
 /* line 90, src/scss/_components/product/_features.scss */
 .pr-features__box-content > div .icon-font.icon-warning {
-  font-size: 57px;
+  font-size: 52px;
 }
 
 /* line 91, src/scss/_components/product/_features.scss */
 .pr-features__box-content > div .icon-font.icon-browser_not_supported {
-  font-size: 55px;
+  font-size: 50px;
 }
 
 /* line 92, src/scss/_components/product/_features.scss */
 .pr-features__box-content > div .icon-font.icon-campaign {
-  font-size: 48px;
+  font-size: 43px;
 }
 
 /* line 93, src/scss/_components/product/_features.scss */
 .pr-features__box-content > div .icon-font.icon-games {
-  font-size: 60px;
+  font-size: 55px;
 }
 
 /* line 94, src/scss/_components/product/_features.scss */
 .pr-features__box-content > div .icon-font.icon-phonelink_lock {
-  font-size: 65px;
+  font-size: 60px;
 }
 
 /* line 95, src/scss/_components/product/_features.scss */
 .pr-features__box-content > div .icon-font.icon-build {
-  font-size: 60px;
+  font-size: 55px;
 }
 
 /* line 96, src/scss/_components/product/_features.scss */
 .pr-features__box-content > div .icon-font.icon-search {
-  font-size: 52px;
+  font-size: 47px;
 }
 
 /* line 97, src/scss/_components/product/_features.scss */
 .pr-features__box-content > div .icon-font.icon-developer_board {
-  font-size: 55px;
+  font-size: 50px;
 }
 
 /* line 98, src/scss/_components/product/_features.scss */
 .pr-features__box-content > div .icon-font.icon-construction {
-  font-size: 55px;
+  font-size: 50px;
 }
 
 /* line 99, src/scss/_components/product/_features.scss */
 .pr-features__box-content > div .icon-font.icon-build_circle {
-  font-size: 65px;
+  font-size: 60px;
 }
 
 /* line 102, src/scss/_components/product/_features.scss */
 .pr-features__box-content > div span {
-  font-size: 24px;
+  font-size: 21px;
   letter-spacing: 0.04em;
   color: #040404;
   text-transform: capitalize;
