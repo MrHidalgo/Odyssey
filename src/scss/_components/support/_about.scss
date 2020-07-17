@@ -4,9 +4,16 @@
 	padding-top: 75px;
 	padding-bottom: 150px;
 	@extend %fontsVerdana;
+	@include adaptive(767) {
+		padding-top: 55px;
+		padding-bottom: 75px;
+	}
 
 	&__wrapper {
 		padding-bottom: 75px;
+		@include adaptive(767) {
+			padding-bottom: 50px;
+		}
 	}
 
 	&__title {
@@ -92,6 +99,9 @@
 			font-size: 24px;
 			letter-spacing: 0.04em;
 			color: #040404;
+			@include adaptive(1279) {
+				font-size: 22px;
+			}
 		}
 	}
 
@@ -101,6 +111,9 @@
 		letter-spacing: 0.03em;
 		line-height: 42px;
 		color: #040404;
+		@include adaptive(1279) {
+			font-size: 18px;
+		}
 
 		&.sp-about__desc--pb0 {
 			padding-bottom: 0;
@@ -113,6 +126,9 @@
 		letter-spacing: 0.03em;
 		line-height: 42px;
 		color: #040404;
+		@include adaptive(1279) {
+			font-size: 18px;
+		}
 	}
 }
 

@@ -6,22 +6,22 @@ PageList:
   ready: 100
 - file: product.html
   titleName: Product
-  ready: 55
+  ready: 100
 - file: solutions.html
   titleName: Solutions
-  ready: 55
+  ready: 100
 - file: support.html
   titleName: Support
-  ready: 55
+  ready: 100
 - file: company.html
   titleName: Company
-  ready: 55
+  ready: 100
 - file: contacts.html
   titleName: Contact Us
-  ready: 55
+  ready: 100
 - file: terms.html
   titleName: Terms Of Service
-  ready: 55
+  ready: 100
 - file: privacy.html
   titleName: Privacy Policy
-  ready: 55
+  ready: 100

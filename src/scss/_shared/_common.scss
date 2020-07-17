@@ -93,6 +93,12 @@
 		align-items: center;
 		justify-content: center;
 		height: 380px;
+		@include adaptive(1279) {
+			height: 350px;
+		}
+		@include adaptive(767) {
+			height: 300px;
+		}
 	}
 
 	&__title {
@@ -107,6 +113,12 @@
 			position: relative;
 			padding: 35px 45px;
 			border: 3px solid #fff;
+			@include adaptive(1279) {
+				padding: 25px 35px;
+			}
+			@include adaptive(767) {
+				padding: 20px 40px;
+			}
 		}
 
 		&-line {

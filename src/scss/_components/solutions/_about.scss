@@ -4,10 +4,16 @@
 	padding-top: 55px;
 	padding-bottom: 200px;
 	@extend %fontsVerdana;
+	@include adaptive(767) {
+		padding-bottom: 100px;
+	}
 
 	&__wrapper {
 		&:not(:last-of-type) {
 			padding-bottom: 60px;
+			@include adaptive(767) {
+				padding-bottom: 30px;
+			}
 		}
 	}
 
@@ -16,9 +22,15 @@
 		letter-spacing: 0.03em;
 		line-height: 39px;
 		color: #040404;
+		@include adaptive(1279) {
+			font-size: 18px;
+		}
 
 		&:not(:last-of-type) {
 			padding-bottom: 40px;
+			@include adaptive(1279) {
+				padding-bottom: 30px;
+			}
 		}
 
 		&-wrapper {
@@ -32,6 +44,9 @@
 		letter-spacing: 0.03em;
 		color: #040404;
 		transform: skewX(30deg);
+		@include adaptive(767) {
+			font-size: 18px;
+		}
 
 		&-wrapper {
 			position: relative;
@@ -42,6 +57,11 @@
 			padding-top: 50px;
 			padding-left: 100px;
 			padding-bottom: 50px;
+			@include adaptive(767) {
+				padding-left: 50px;
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
 
 			&.s-about__title--right {
 				margin-left: auto;
@@ -62,6 +82,13 @@
 			}
 
 			&.s-about__title--2 {
+				@include adaptive(767) {
+					.s-about__title-content {
+						padding-left: 0;
+						padding-right: 50px;
+					}
+				}
+
 				.s-about__title-illustration {
 					span {
 						background-color: #9ec7db;
@@ -78,6 +105,13 @@
 			}
 
 			&.s-about__title--4 {
+				@include adaptive(767) {
+					.s-about__title-content {
+						padding-left: 0;
+						padding-right: 50px;
+					}
+				}
+
 				.s-about__title-illustration {
 					span {
 						background-color: #78A193;
@@ -96,6 +130,11 @@
 			background-color: #fff;
 			box-shadow: 0 2px 15px 5px rgba(#000, 0.15);
 			transform: skewX(-30deg);
+			@include adaptive(767) {
+				height: auto;
+				min-height: 75px;
+				padding-left: 50px;
+			}
 		}
 
 		&-illustration {
@@ -106,6 +145,9 @@
 			right: 0;
 			width: 100%;
 			height: calc(100% - 40px);
+			@include adaptive(767) {
+				transform: scale(0.5);
+			}
 
 			span {
 				position: absolute;
@@ -141,6 +183,10 @@
 			left: 0;
 			width: 150px;
 			height: 100%;
+			@include adaptive(767) {
+				left: -50px;
+				transform: scale(0.5);
+			}
 
 			span {
 				position: absolute;

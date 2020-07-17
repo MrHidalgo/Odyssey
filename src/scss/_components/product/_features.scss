@@ -2,6 +2,9 @@
 
 .pr-features {
 	padding-bottom: 150px;
+	@include adaptive(767) {
+		padding-bottom: 75px;
+	}
 
 	&__title {
 		padding-bottom: 15px;
@@ -43,6 +46,9 @@
 			display: flex;
 			flex-direction: column;
 			padding-bottom: 55px;
+			@include adaptive(767) {
+				padding-bottom: 30px;
+			}
 
 			> div {
 				padding-bottom: 40px;
@@ -55,19 +61,39 @@
 			min-height: 110px;
 			padding-top: 10px;
 			padding-bottom: 10px;
+			@include adaptive(767) {
+				flex-wrap: wrap;
+			}
 
 			> div {
 				display: flex;
 				align-items: center;
 				width: 100%;
 				max-width: calc(100% / 3);
+				@include adaptive(767) {
+					max-width: 100%;
+
+					&:not(:last-of-type) {
+						padding-bottom: 15px;
+					}
+				}
 
 				&:nth-of-type(2) {
 					justify-content: center;
+					@include adaptive(1023) {
+						padding-right: 30px;
+					}
+					@include adaptive(767) {
+						justify-content: flex-start;
+						padding-right: 0;
+					}
 
 					p,
 					span {
 						width: 50%;
+						@include adaptive(767) {
+							width: auto;
+						}
 					}
 
 					p {
@@ -75,28 +101,131 @@
 						align-items: center;
 						justify-content: flex-end;
 						padding-right: 30px;
+						@include adaptive(1023) {
+							padding-right: 15px;
+						}
+						@include adaptive(767) {
+							width: 75px;
+							justify-content: flex-start;
+						}
 					}
 				}
 
 				p {
 					width: 100px;
+					@include adaptive(767) {
+						width: 75px;
+					}
 				}
 
 				.icon-font {
 					color: #040404;
 
-					&.icon-devices { font-size: 55px; }
-					&.icon-security { font-size: 61px; }
-					&.icon-warning { font-size: 52px; }
-					&.icon-browser_not_supported { font-size: 50px; }
-					&.icon-campaign { font-size: 43px; }
-					&.icon-games { font-size: 55px; }
-					&.icon-phonelink_lock { font-size: 60px; }
-					&.icon-build { font-size: 55px; }
-					&.icon-search { font-size: 47px; }
-					&.icon-developer_board { font-size: 50px; }
-					&.icon-construction { font-size: 50px; }
-					&.icon-build_circle { font-size: 60px; }
+					&.icon-devices {
+						font-size: 55px;
+						@include adaptive(1279) {
+							font-size: 50px;
+						}
+						@include adaptive(1023) {
+							font-size: 45px;
+						}
+					}
+					&.icon-security {
+						font-size: 61px;
+						@include adaptive(1279) {
+							font-size: 56px;
+						}
+						@include adaptive(1023) {
+							font-size: 51px;
+						}
+					}
+					&.icon-warning {
+						font-size: 52px;
+						@include adaptive(1279) {
+							font-size: 47px;
+						}
+						@include adaptive(1023) {
+							font-size: 42px;
+						}
+					}
+					&.icon-browser_not_supported {
+						font-size: 50px;
+						@include adaptive(1279) {
+							font-size: 45px;
+						}
+						@include adaptive(1023) {
+							font-size: 40px;
+						}
+					}
+					&.icon-campaign {
+						font-size: 43px;
+						@include adaptive(1279) {
+							font-size: 38px;
+						}
+						@include adaptive(1023) {
+							font-size: 33px;
+						}
+					}
+					&.icon-games {
+						font-size: 55px;
+						@include adaptive(1279) {
+							font-size: 50px;
+						}
+						@include adaptive(1023) {
+							font-size: 45px;
+						}
+					}
+					&.icon-phonelink_lock {
+						font-size: 60px;
+						@include adaptive(1279) {
+							font-size: 55px;
+						}
+					}
+					&.icon-build {
+						font-size: 55px;
+						@include adaptive(1279) {
+							font-size: 50px;
+						}
+						@include adaptive(1023) {
+							font-size: 45px;
+						}
+					}
+					&.icon-search {
+						font-size: 47px;
+						@include adaptive(1279) {
+							font-size: 42px;
+						}
+						@include adaptive(1023) {
+							font-size: 37px;
+						}
+					}
+					&.icon-developer_board {
+						font-size: 50px;
+						@include adaptive(1279) {
+							font-size: 45px;
+						}
+						@include adaptive(1023) {
+							font-size: 40px;
+						}
+					}
+					&.icon-construction {
+						font-size: 50px;
+						@include adaptive(1279) {
+							font-size: 45px;
+						}
+						@include adaptive(1023) {
+							font-size: 40px;
+						}
+					}
+					&.icon-build_circle {
+						font-size: 60px;
+						@include adaptive(1279) {
+							font-size: 55px;
+						}
+						@include adaptive(1023) {
+							font-size: 50px;
+						}
+					}
 				}
 
 				span {
@@ -107,6 +236,21 @@
 					letter-spacing: 0.04em;
 					color: #040404;
 					text-transform: capitalize;
+					@include adaptive(1279) {
+						font-size: 19px;
+					}
+					@include adaptive(1023) {
+						font-size: 17px;
+					}
+					@include adaptive(767) {
+						flex: 1;
+						min-width: 1px;
+						max-width: 100%;
+
+						br {
+							display: none;
+						}
+					}
 				}
 			}
 		}
@@ -116,9 +260,23 @@
 		min-width: 220px;
 		margin-left: 25px;
 		margin-right: 25px;
+		@include adaptive(767) {
+			width: 100%;
+			max-width: 425px;
+			min-width: auto;
+			margin-left: auto;
+			margin-right: auto;
+
+			&:nth-of-type(1) {
+				margin-bottom: 30px;
+			}
+		}
 
 		&__wrapper {
 			justify-content: center;
+			@include adaptive(767) {
+				flex-direction: column;
+			}
 		}
 	}
 }

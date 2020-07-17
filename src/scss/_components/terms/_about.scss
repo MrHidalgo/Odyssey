@@ -3,6 +3,10 @@
 .t-about {
 	padding-top: 100px;
 	padding-bottom: 200px;
+	@include adaptive(767) {
+		padding-top: 55px;
+		padding-bottom: 100px;
+	}
 
 	&__desc {
 		padding-bottom: 40px;
@@ -11,9 +15,15 @@
 		letter-spacing: 0.03em;
 		line-height: 42px;
 		color: #040404;
+		@include adaptive(1023) {
+			font-size: 18px;
+		}
 
 		&:last-of-type {
 			padding-bottom: 80px;
+			@include adaptive(1023) {
+				padding-bottom: 60px;
+			}
 		}
 	}
 
@@ -25,6 +35,9 @@
 		letter-spacing: 0.03em;
 		line-height: 42px;
 		color: #000;
+		@include adaptive(1023) {
+			font-size: 20px;
+		}
 	}
 
 	ol,
@@ -39,9 +52,15 @@
 			letter-spacing: 0.03em;
 			line-height: 42px;
 			color: #040404;
+			@include adaptive(1023) {
+				font-size: 18px;
+			}
 
 			&:last-of-type {
 				padding-bottom: 80px;
+				@include adaptive(1023) {
+					padding-bottom: 60px;
+				}
 			}
 
 			strong {
