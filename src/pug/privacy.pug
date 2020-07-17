@@ -8,5 +8,5 @@ extends shared/_layout
 block content
 	div.body.body--start(class!= pageClassName)
 
-		include components/privacy/_main
+		+mainInnerSection('privacy', 'Privacy Policy')
 		include components/privacy/_about

@@ -12,4 +12,15 @@ include ./_mixin/_modal
 include ./_mixin/_nav
 include ./_mixin/_form
 
+mixin mainInnerSection(classMod, title)
+	section#inner-main.inner-main(class!= "inner-main--" + classMod)
+
+		.c-grid-fluid
+
+			.inner-main__wrapper
+
+				.inner-main__title-wrapper
+					p.inner-main__title.c-title!= title
+					.inner-main__title-line
+
 //- MIXIN :: END

@@ -8,5 +8,5 @@ extends shared/_layout
 block content
 	div.body.body--start(class!= pageClassName)
 
-		include components/terms/_main
+		+mainInnerSection('terms', 'Terms Of Service')
 		include components/terms/_about

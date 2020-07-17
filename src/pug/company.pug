@@ -8,5 +8,5 @@ extends shared/_layout
 block content
 	div.body.body--start(class!= pageClassName)
 
-		include components/company/_main
+		+mainInnerSection('company', 'Company')
 		include components/company/_about
