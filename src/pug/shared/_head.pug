@@ -10,3 +10,13 @@ title!= title
 link(rel="shortcut icon" href="icon/favicon.ico")
 
 include _style
+
+script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-110093046-1')
+script.
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+	gtag('config', 'UA-110093046-1');
+
