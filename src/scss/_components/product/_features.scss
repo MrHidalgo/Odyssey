@@ -73,48 +73,55 @@
 				@include adaptive(767) {
 					max-width: 100%;
 
-					&:not(:last-of-type) {
+					&:not(:last-child) {
 						padding-bottom: 15px;
 					}
 				}
 
+				> div {
+					display: flex;
+					align-items: center;
+				}
+
+				&:nth-of-type(1) {
+					> div {
+						width: 100%;
+						max-width: 377px;
+					}
+				}
 				&:nth-of-type(2) {
 					justify-content: center;
-					@include adaptive(1023) {
-						padding-right: 30px;
-					}
 					@include adaptive(767) {
 						justify-content: flex-start;
-						padding-right: 0;
 					}
 
-					p,
-					span {
-						width: 50%;
-						@include adaptive(767) {
-							width: auto;
-						}
+					> div {
+						width: 100%;
+						max-width: 230px;
+					}
+				}
+				&:nth-of-type(3) {
+					justify-content: flex-end;
+					@include adaptive(767) {
+						justify-content: flex-start;
 					}
 
-					p {
-						display: flex;
-						align-items: center;
-						justify-content: flex-end;
-						padding-right: 30px;
-						@include adaptive(1023) {
-							padding-right: 15px;
-						}
-						@include adaptive(767) {
-							width: 75px;
-							justify-content: flex-start;
-						}
+					> div {
+						width: 100%;
+						max-width: 333px;
 					}
 				}
 
 				p {
-					width: 100px;
+					width: 80px;
+					@include adaptive(1023) {
+						width: 60px;
+					}
 					@include adaptive(767) {
-						width: 75px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						height: 60px;
 					}
 				}
 
@@ -229,9 +236,9 @@
 				}
 
 				span {
-					//flex: 1;
-					//min-width: 1px;
-					//max-width: 100%;
+					flex: 1;
+					min-width: 1px;
+					max-width: 100%;
 					font-size: 21px;
 					letter-spacing: 0.04em;
 					color: #040404;
@@ -240,12 +247,10 @@
 						font-size: 19px;
 					}
 					@include adaptive(1023) {
-						font-size: 17px;
+						font-size: 16px;
 					}
 					@include adaptive(767) {
-						flex: 1;
-						min-width: 1px;
-						max-width: 100%;
+						padding-left: 10px;
 
 						br {
 							display: none;

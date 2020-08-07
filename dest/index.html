@@ -10,6 +10,7 @@
     <!-- FAVICON-->
     <link rel="shortcut icon" href="icon/favicon.ico">
     <!-- STYLE :: START-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/app.css">
     <!-- STYLE :: END-->
@@ -52,7 +53,7 @@
           <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="main__slide">
-                        <div class="main__slide-img"><img src="img/img-main-slide-1.jpg" srcset="img/img-main-slide-1@2x.jpg 2x" alt=""></div>
+                        <div class="main__slide-img"><img src="img/img-main-slide-1.png" alt=""></div>
                         <div class="main__slide-content">
                           <p class="main__slide-title">Working remotely from home</p>
                           <p class="main__slide-desc">The Corona crisis has changed everything but one this is certain. We are not where the office is. Remote working is no longer a one-off. So secure and mobile access to all apps and data with the devices of your choice is a must.</p><a class="main__slide-btn" href="#"><span>Get Started</span></a>
@@ -128,11 +129,7 @@
                 <div class="see__btn c-btn__wrapper"><a class="c-btn" href="#"><span>Learn more</span></a><a class="c-btn" href="#"><span>Book A Demo</span></a></div>
               </div>
             </div>
-            <div class="see__wrapper-right" see-videoNode-js>
-              <video id="video" poster="img/img-see-poster.jpg">
-                <source src="img/movie.mp4" type="video/mp4">
-              </video><a class="see__play" href="#" see-play-js><i class="icon-font icon-play"></i><i class="icon-font icon-pause"></i></a>
-            </div>
+            <div class="see__wrapper-right" see-videoNode-js><a class="see__play" href="#homeVideo" data-effect="mfp-zoom-in" popup-js><i class="icon-font icon-play"></i><i class="icon-font icon-pause"></i></a></div>
           </div>
         </div>
       </section>
@@ -344,6 +341,13 @@
         </div>
       </section>
       <!-- SECTION :: END-->
+      <div class="c-modal mfp-hide mfp-with-anim" id="homeVideo">
+              <div class="c-modal__body">
+                <video id="video" poster="img/img-see-poster.jpg">
+                  <source src="img/Odyssey-v2.mp4" type="video/mp4">
+                </video>
+              </div>
+      </div>
     </div>
     <!-- FOOTER :: START-->
     <footer class="footer" id="footer">
@@ -387,6 +391,8 @@
     <!-- FOOTER :: END-->
   </body>
   <!-- SCRIPT :: START-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js" integrity="sha512-1lagjLfnC1I0iqH9plHYIUq3vDMfjhZsLy9elfK89RBcpcRcx4l+kRJBSnHh2Mh6kLxRHoObD1M5UTUbgFy6nA==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script src="js/vendor.js"></script>
   <script src="js/app.js"></script>
   <!-- SCRIPT :: END-->

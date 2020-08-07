@@ -29,6 +29,52 @@ var initHamburger = function initHamburger() {
 };
 
 /**
+ * @name initPopups
+ *
+ * @description
+ */
+var initPopups = function initPopups() {
+  var myVideo = document.getElementById("video");
+
+  function playPause() {
+    var videoNode = document.querySelector('[see-videoNode-js]');
+
+    if (myVideo.paused) {
+      myVideo.play();
+    } else {
+      myVideo.pause();
+      myVideo.currentTime = 0;
+    }
+  }
+
+  $('[popup-js]').magnificPopup({
+    type: 'inline',
+    fixedContentPos: true,
+    fixedBgPos: true,
+    overflowY: 'auto',
+    closeBtnInside: true,
+    preloader: false,
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'is-show',
+    callbacks: {
+      beforeOpen: function beforeOpen() {
+        this.st.mainClass = this.st.el.attr('data-effect');
+
+        if (myVideo) {
+          playPause(myVideo);
+        }
+      },
+      close: function close() {
+        if (myVideo) {
+          playPause(myVideo);
+        }
+      }
+    }
+  });
+};
+
+/**
  * @name initPreventBehavior
  *
  * @description
@@ -202,10 +248,11 @@ var initSwiper = function initSwiper() {
     // lib
     initSwiper();
     initHamburger();
+    initPopups();
     // ==========================================
 
     // callback
-    seeVideoToggle();
+    // seeVideoToggle();
     // ==========================================
   };
   initNative();

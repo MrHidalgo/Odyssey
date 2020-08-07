@@ -1,11 +1,41 @@
-.modal {
+.c-modal {
   position: relative;
   width: 100%;
-  //max-width: 500px;
-  //min-height: 200px;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
+
+	&#homeVideo {
+		max-width: 1024px;
+
+		.mfp-close {
+			position: absolute;
+			top: -30px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			width: 30px;
+			height: 30px;
+			color: #ffffff;
+		}
+
+		.c-modal {
+			&__body {
+				position: relative;
+				height: 600px;
+				@include adaptive(1023) {
+					height: 450px;
+				}
+				@include adaptive(767) {
+					height: 380px;
+				}
+			}
+		}
+
+		video {
+			@extend %imageResCoverAbs;
+		}
+	}
 }
 
 

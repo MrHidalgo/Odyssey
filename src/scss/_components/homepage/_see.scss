@@ -41,6 +41,10 @@
 
 		&-right {
 			position: relative;
+			background-image: url('../img/img-see-poster.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
 
 			&.is-play {
 				&:before,

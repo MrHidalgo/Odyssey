@@ -43,10 +43,11 @@
 		// lib
 		initSwiper();
 		initHamburger();
+		initPopups();
 		// ==========================================
 
 		// callback
-		seeVideoToggle();
+		// seeVideoToggle();
 		// ==========================================
 	};
 	initNative();

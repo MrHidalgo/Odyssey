@@ -16,3 +16,10 @@ block content
 		include components/homepage/_description
 		include components/homepage/_ecosystem
 		include components/homepage/_try
+
+		mixin modalContent()
+			.c-modal__body
+				video#video(poster='img/img-see-poster.jpg')
+					source(src="img/Odyssey-v2.mp4" type="video/mp4")
+
+		+modal('homeVideo', 'modalContent')
