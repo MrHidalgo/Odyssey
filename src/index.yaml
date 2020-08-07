@@ -7,6 +7,9 @@ PageList:
 - file: product.html
   titleName: Product
   ready: 100
+- file: partners.html
+  titleName: Partners
+  ready: 100
 - file: solutions.html
   titleName: Solutions
   ready: 100

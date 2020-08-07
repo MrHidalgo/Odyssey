@@ -1,0 +1,13 @@
+---
+title: Odyssey | Partners
+
+pageClassName: p-partners
+---
+extends shared/_layout
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		+mainInnerSection('partners', 'Partners')
+
+		include components/partners/_partners
