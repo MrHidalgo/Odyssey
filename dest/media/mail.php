@@ -11,6 +11,8 @@
       $errors['email'] = 'Email is required.';
   if (empty($_POST['phone']))
       $errors['phone'] = 'Phone is required.';
+  if (empty($_POST['message']))
+      $errors['message'] = 'Message is required.';
 
   $sucessMessage = "Your application has been sent successfully. We will contact you for confirmation shortly.";
 
@@ -33,6 +35,7 @@
     $email_message .= "Name: ".clean_string($_POST['name'])."\n";
     $email_message .= "Email: ".clean_string($_POST['email'])."\n";
     $email_message .= "Phone: ".clean_string($_POST['phone'])."\n";
+    $email_message .= "Message: ".clean_string($_POST['message'])."\n";
 
     @mail($email_to, $email_subject, $email_message);
 

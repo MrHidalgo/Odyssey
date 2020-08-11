@@ -314,7 +314,8 @@ var initValidation = function initValidation() {
 				required: true,
 				email: true
 			},
-			phone: 'required'
+			phone: 'required',
+			message: 'required'
 		},
 		messages: {
 			name: {
@@ -326,6 +327,9 @@ var initValidation = function initValidation() {
 			},
 			phone: {
 				required: "Please specify the Phone"
+			},
+			message: {
+				required: "Please specify the Message"
 			}
 		}
 	});

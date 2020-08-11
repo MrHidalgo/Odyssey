@@ -3550,19 +3550,20 @@ picture {
 }
 
 /* line 149, src/scss/_components/homepage/_try.scss */
-.try__form-field.is-error input {
+.try__form-field.is-error input,
+.try__form-field.is-error textarea {
   border-color: #cc0000;
   -webkit-transition: border-color 0.3s ease-in-out;
   -o-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 155, src/scss/_components/homepage/_try.scss */
+/* line 156, src/scss/_components/homepage/_try.scss */
 .try__form-field--btn {
   padding-top: 28px;
 }
 
-/* line 159, src/scss/_components/homepage/_try.scss */
+/* line 160, src/scss/_components/homepage/_try.scss */
 .try__form-field label.error {
   position: absolute;
   bottom: 0;
@@ -3582,7 +3583,7 @@ picture {
   color: #cc0000;
 }
 
-/* line 173, src/scss/_components/homepage/_try.scss */
+/* line 174, src/scss/_components/homepage/_try.scss */
 .try__form-loader {
   z-index: 10;
   opacity: 0;
@@ -3610,7 +3611,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 188, src/scss/_components/homepage/_try.scss */
+/* line 189, src/scss/_components/homepage/_try.scss */
 .try__form-loader.is-show {
   opacity: 1;
   visibility: visible;
@@ -3619,7 +3620,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 194, src/scss/_components/homepage/_try.scss */
+/* line 195, src/scss/_components/homepage/_try.scss */
 .try__form-loader #bowlG {
   position: relative;
   width: 58px;
@@ -3633,7 +3634,7 @@ picture {
   opacity: 0.75;
 }
 
-/* line 204, src/scss/_components/homepage/_try.scss */
+/* line 205, src/scss/_components/homepage/_try.scss */
 .try__form-loader #bowl_ringG {
   position: absolute;
   width: 58px;
@@ -3643,7 +3644,7 @@ picture {
           border-radius: 58px;
 }
 
-/* line 212, src/scss/_components/homepage/_try.scss */
+/* line 213, src/scss/_components/homepage/_try.scss */
 .try__form-loader .ball_holderG {
   position: absolute;
   width: 16px;
@@ -3660,7 +3661,7 @@ picture {
           animation-timing-function: linear;
 }
 
-/* line 224, src/scss/_components/homepage/_try.scss */
+/* line 225, src/scss/_components/homepage/_try.scss */
 .try__form-loader .ballG {
   position: absolute;
   left: 0px;
@@ -3694,7 +3695,7 @@ picture {
   }
 }
 
-/* line 245, src/scss/_components/homepage/_try.scss */
+/* line 246, src/scss/_components/homepage/_try.scss */
 .try__form-message {
   opacity: 0;
   visibility: hidden;
@@ -3763,7 +3764,8 @@ picture {
 }
 
 /* line 288, src/scss/_components/homepage/_try.scss */
-.try__form input {
+.try__form input,
+.try__form textarea {
   outline: none;
   width: 100%;
   height: 50px;
@@ -3778,6 +3780,13 @@ picture {
   -webkit-transition: border-color 0.3s ease-in-out;
   -o-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
+}
+
+/* line 303, src/scss/_components/homepage/_try.scss */
+.try__form textarea {
+  resize: none;
+  height: 115px;
+  padding: 15px;
 }
 
 /* line 3, src/scss/_components/product/_about.scss */
@@ -5390,7 +5399,7 @@ picture {
 /* line 93, src/scss/_components/partners/_partners.scss */
 .partners__box-body p {
   font-weight: normal;
-  font-size: 34px;
+  font-size: 28px;
   letter-spacing: 0.03em;
   text-align: center;
   color: #040404;
@@ -5399,14 +5408,14 @@ picture {
 @media screen and (max-width: 1279px) {
   /* line 93, src/scss/_components/partners/_partners.scss */
   .partners__box-body p {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
 @media screen and (max-width: 1023px) {
   /* line 93, src/scss/_components/partners/_partners.scss */
   .partners__box-body p {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 

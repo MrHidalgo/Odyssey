@@ -92,15 +92,15 @@
 
 			p {
 				font-weight: normal;
-				font-size: 34px;
+				font-size: 28px;
 				letter-spacing: 0.03em;
 				text-align: center;
 				color: #040404;
 				@include adaptive(1279) {
-					font-size: 28px;
+					font-size: 24px;
 				}
 				@include adaptive(1023) {
-					font-size: 24px;
+					font-size: 20px;
 				}
 			}
 		}

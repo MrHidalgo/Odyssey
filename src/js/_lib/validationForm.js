@@ -109,6 +109,7 @@ const initValidation = () => {
 				email: true
 			},
 			phone: 'required',
+			message: 'required',
 		},
 		messages: {
 			name:  {
@@ -120,6 +121,9 @@ const initValidation = () => {
 			},
 			phone: {
 				required: "Please specify the Phone"
+			},
+			message: {
+				required: "Please specify the Message"
 			}
 		}
 	});
