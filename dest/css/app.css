@@ -3496,6 +3496,8 @@ picture {
 
 /* line 117, src/scss/_components/homepage/_try.scss */
 .try__form {
+  overflow: hidden;
+  position: relative;
   width: 100%;
   max-width: 517px;
   min-height: 481px;
@@ -3524,8 +3526,9 @@ picture {
   }
 }
 
-/* line 135, src/scss/_components/homepage/_try.scss */
+/* line 137, src/scss/_components/homepage/_try.scss */
 .try__form-field {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3538,12 +3541,206 @@ picture {
   padding-bottom: 20px;
 }
 
-/* line 140, src/scss/_components/homepage/_try.scss */
+/* line 144, src/scss/_components/homepage/_try.scss */
+.try__form-field.is-error label {
+  color: #cc0000;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 149, src/scss/_components/homepage/_try.scss */
+.try__form-field.is-error input {
+  border-color: #cc0000;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 155, src/scss/_components/homepage/_try.scss */
 .try__form-field--btn {
   padding-top: 28px;
 }
 
-/* line 145, src/scss/_components/homepage/_try.scss */
+/* line 159, src/scss/_components/homepage/_try.scss */
+.try__form-field label.error {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 20px;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #cc0000;
+}
+
+/* line 173, src/scss/_components/homepage/_try.scss */
+.try__form-loader {
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 188, src/scss/_components/homepage/_try.scss */
+.try__form-loader.is-show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 194, src/scss/_components/homepage/_try.scss */
+.try__form-loader #bowlG {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  margin: auto;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  opacity: 0.75;
+}
+
+/* line 204, src/scss/_components/homepage/_try.scss */
+.try__form-loader #bowl_ringG {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  border: 5px solid #030303;
+  -webkit-border-radius: 58px;
+          border-radius: 58px;
+}
+
+/* line 212, src/scss/_components/homepage/_try.scss */
+.try__form-loader .ball_holderG {
+  position: absolute;
+  width: 16px;
+  height: 58px;
+  left: 21px;
+  top: 0px;
+  -webkit-animation-name: ball_moveG;
+          animation-name: ball_moveG;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+/* line 224, src/scss/_components/homepage/_try.scss */
+.try__form-loader .ballG {
+  position: absolute;
+  left: 0px;
+  top: -14px;
+  width: 23px;
+  height: 23px;
+  background: #030303;
+  -webkit-border-radius: 19px;
+          border-radius: 19px;
+}
+
+@-webkit-keyframes ball_moveG {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes ball_moveG {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* line 245, src/scss/_components/homepage/_try.scss */
+.try__form-message {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 11;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 262, src/scss/_components/homepage/_try.scss */
+.try__form-message.is-show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 268, src/scss/_components/homepage/_try.scss */
+.try__form-message p {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 20px;
+  color: #030303;
+}
+
+/* line 276, src/scss/_components/homepage/_try.scss */
 .try__form label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3553,16 +3750,19 @@ picture {
   font-size: 20px;
   line-height: 1;
   color: #030303;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 145, src/scss/_components/homepage/_try.scss */
+  /* line 276, src/scss/_components/homepage/_try.scss */
   .try__form label {
     font-size: 18px;
   }
 }
 
-/* line 156, src/scss/_components/homepage/_try.scss */
+/* line 288, src/scss/_components/homepage/_try.scss */
 .try__form input {
   outline: none;
   width: 100%;
@@ -3575,6 +3775,9 @@ picture {
   font-size: 18px;
   line-height: 1;
   color: #030303;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
 }
 
 /* line 3, src/scss/_components/product/_about.scss */

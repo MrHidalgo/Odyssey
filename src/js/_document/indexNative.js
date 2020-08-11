@@ -44,6 +44,7 @@
 		initSwiper();
 		initHamburger();
 		initPopups();
+		initValidation();
 		// ==========================================
 
 		// callback

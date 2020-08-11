@@ -13,28 +13,37 @@ section#try.try
 					p.try__text Write to us & together, we will tailor a solution for your needs
 
 				.try__info
-					div
-						p.try__info-title Contact Number:
-						a(href="#") XXXXXXXXXX
+					//div
+					//	p.try__info-title Contact Number:
+					//	a(href="#") XXXXXXXXXX
 					div
 						p.try__info-title Email:
-						a(href="#") hello@datacultr.com
+						a(href="#") hello@odyssey.zone
 
 			.try__wrapper-right
 
-				form.try__form(action='' method='' autocomplete='off')
+				form.try__form(action='media/mail.php' method='' name='contactForm' id='contactForm' autocomplete='off')
 					.try__form-field.try__form-field--input
 						label(for='form-name') Your Name
-						input(type='text' name='' id='form-name')
+						input(type='text' name='name' id='form-name' required)
 					.try__form-field.try__form-field--input
 						label(for='form-phone') Your Phone
-						input(type='text' name='' id='form-phone')
+						input(type='text' name='phone' id='form-phone' required)
 					.try__form-field.try__form-field--input
 						label(for='form-email') Your Email
-						input(type='email' name='' id='form-email')
+						input(type='email' name='email' id='form-email' required)
 					.try__form-field.try__form-field--btn
 						.c-btn__wrapper
-							a.c-btn(href="#")
+							button.c-btn(type='submit')
 								span get in touch
+
+					.try__form-loader
+						#bowlG
+							#bowl_ringG
+								.ball_holderG
+									.ballG
+
+					.try__form-message
+						p Your application has been sent successfully. We will contact you for confirmation shortly.
 
 // SECTION :: END

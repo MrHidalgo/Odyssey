@@ -77,30 +77,44 @@
                 <p class="try__text">Write to us & together, we will tailor a solution for your needs</p>
               </div>
               <div class="try__info">
+                <!--div-->
+                <!--	p.try__info-title Contact Number:-->
+                <!--	a(href="#") XXXXXXXXXX-->
                 <div>
-                  <p class="try__info-title">Contact Number:</p><a href="#">XXXXXXXXXX</a>
-                </div>
-                <div>
-                  <p class="try__info-title">Email:</p><a href="#">hello@datacultr.com</a>
+                  <p class="try__info-title">Email:</p><a href="#">hello@odyssey.zone</a>
                 </div>
               </div>
             </div>
             <div class="try__wrapper-right">
-              <form class="try__form" action="" method="" autocomplete="off">
+              <form class="try__form" action="media/mail.php" method="" name="contactForm" id="contactForm" autocomplete="off">
                 <div class="try__form-field try__form-field--input">
                   <label for="form-name">Your Name</label>
-                  <input type="text" name="" id="form-name">
+                  <input type="text" name="name" id="form-name" required>
                 </div>
                 <div class="try__form-field try__form-field--input">
                   <label for="form-phone">Your Phone</label>
-                  <input type="text" name="" id="form-phone">
+                  <input type="text" name="phone" id="form-phone" required>
                 </div>
                 <div class="try__form-field try__form-field--input">
                   <label for="form-email">Your Email</label>
-                  <input type="email" name="" id="form-email">
+                  <input type="email" name="email" id="form-email" required>
                 </div>
                 <div class="try__form-field try__form-field--btn">
-                  <div class="c-btn__wrapper"><a class="c-btn" href="#"><span>get in touch</span></a></div>
+                  <div class="c-btn__wrapper">
+                    <button class="c-btn" type="submit"><span>get in touch</span></button>
+                  </div>
+                </div>
+                <div class="try__form-loader">
+                  <div id="bowlG">
+                    <div id="bowl_ringG">
+                      <div class="ball_holderG">
+                        <div class="ballG"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="try__form-message">
+                  <p>Your application has been sent successfully. We will contact you for confirmation shortly.</p>
                 </div>
               </form>
             </div>
@@ -151,9 +165,9 @@
     <!-- FOOTER :: END-->
   </body>
   <!-- SCRIPT :: START-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js" integrity="sha512-1lagjLfnC1I0iqH9plHYIUq3vDMfjhZsLy9elfK89RBcpcRcx4l+kRJBSnHh2Mh6kLxRHoObD1M5UTUbgFy6nA==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js" integrity="sha512-1lagjLfnC1I0iqH9plHYIUq3vDMfjhZsLy9elfK89RBcpcRcx4l+kRJBSnHh2Mh6kLxRHoObD1M5UTUbgFy6nA==" crossorigin="anonymous")-->
   <script src="js/vendor.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script src="js/app.js"></script>
   <!-- SCRIPT :: END-->
 </html>
