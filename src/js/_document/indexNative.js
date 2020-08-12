@@ -45,6 +45,7 @@
 		initHamburger();
 		initPopups();
 		initValidation();
+		initSmoothScroll();
 		// ==========================================
 
 		// callback

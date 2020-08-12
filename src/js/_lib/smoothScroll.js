@@ -7,7 +7,7 @@
  */
 const initSmoothScroll = (
   btnName = "[anchor-js]",
-  animateSpeed = 1000
+  animateSpeed = 850
 ) => {
 
   $(btnName).on("click", (e) => {
@@ -21,5 +21,19 @@ const initSmoothScroll = (
     }, animateSpeed);
 
   });
+
+  window.addEventListener('load', (ev) => {
+		if (location.hash) {
+			let target = location.hash,
+				headerHeight = $(".header").outerHeight() || 0,
+				topHeightOffset = $(target).offset().top - headerHeight;
+
+			console.log(target);
+
+			$('body, html').animate({
+				scrollTop: topHeightOffset
+			}, 850);
+		}
+	}, false);
 
 };

@@ -94,6 +94,42 @@ var initPreventBehavior = function initPreventBehavior() {
 };
 
 /**
+ * @name initSmoothScroll
+ *
+ * @description Smooth transition to anchors to the block.
+ */
+var initSmoothScroll = function initSmoothScroll() {
+	var btnName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "[anchor-js]";
+	var animateSpeed = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 850;
+
+
+	$(btnName).on("click", function (e) {
+
+		var linkHref = $(e.currentTarget).attr('href'),
+		    headerHeight = $(".header").outerHeight() || 0,
+		    topHeightOffset = $(linkHref).offset().top - headerHeight;
+
+		$('body, html').animate({
+			scrollTop: topHeightOffset
+		}, animateSpeed);
+	});
+
+	window.addEventListener('load', function (ev) {
+		if (location.hash) {
+			var target = location.hash,
+			    headerHeight = $(".header").outerHeight() || 0,
+			    topHeightOffset = $(target).offset().top - headerHeight;
+
+			console.log(target);
+
+			$('body, html').animate({
+				scrollTop: topHeightOffset
+			}, 850);
+		}
+	}, false);
+};
+
+/**
  * @name initSwiper
  *
  * @description initialize Swiper
@@ -381,6 +417,7 @@ var initValidation = function initValidation() {
 		initHamburger();
 		initPopups();
 		initValidation();
+		initSmoothScroll();
 		// ==========================================
 
 		// callback
