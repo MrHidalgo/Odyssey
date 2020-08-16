@@ -37,6 +37,9 @@
 			@include adaptive(1023) {
 				padding-left: 40px;
 			}
+			@include adaptive(767) {
+				padding-right: 15px;
+			}
 		}
 
 		&-right {
@@ -106,6 +109,9 @@
 		max-width: 353px;
 		padding-bottom: 60px;
 		text-align: left;
+		@include adaptive(767) {
+			padding-bottom: 40px;
+		}
 	}
 
 	&__line {
@@ -131,9 +137,23 @@
 	}
 
 	&__btn {
+		@include adaptive(767) {
+			flex-wrap: wrap;
+		}
+
 		.c-btn {
+			text-align: center;
+			@include adaptive(767) {
+				width: 100%;
+				margin-bottom: 15px;
+			}
+
 			&:nth-of-type(1) {
 				margin-right: 40px;
+				@include adaptive(767) {
+					margin-right: 0;
+					margin-bottom: 15px;
+				}
 			}
 		}
 	}

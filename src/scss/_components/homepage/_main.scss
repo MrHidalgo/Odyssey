@@ -67,6 +67,8 @@
 			}
 			@include adaptive(767) {
 				padding-top: 50px;
+				padding-left: 15px;
+				padding-right: 15px;
 			}
 		}
 
@@ -81,8 +83,6 @@
 				font-size: 33px;
 			}
 			@include adaptive(767) {
-				padding-left: 15px;
-				padding-right: 15px;
 				font-size: 30px;
 			}
 
